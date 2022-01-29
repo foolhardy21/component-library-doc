@@ -1,3 +1,25 @@
 * {
     margin: 0;
 }
+
+.grid-1 {
+    display: grid;
+    grid-template-areas: "header header header header header"
+                        "main main main main main"
+                        "footer footer footer footer footer";
+}
+
+.header-wrapper {
+    background: var(--c-red);
+    grid-area: header;
+}
+
+.main-wrapper {
+    background: var(--c-yellow);
+    grid-area: main;
+}
+
+.footer-wrapper {
+    background: var(--c-green);
+    grid-area: footer;
+}
