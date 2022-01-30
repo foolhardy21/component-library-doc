@@ -3,8 +3,8 @@ const formInput = document.querySelector('#input')
 
 const homeBtn = document.querySelector('.install-btn')
 const docBtn = document.querySelector('.doc-btn')
-const homeDiv =  document.querySelector('.installation-div')
-const docDiv =  document.querySelector('.documentation-div')
+const homeDiv =  document.querySelector('.setup-div')
+const docDiv =  document.querySelector('.doc-div')
 
 const topScrollBtn =  document.querySelector('.float-btn')
 

@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.overflow-x {
+    overflow-x: auto;
+}
+
 .color-dgray {
     color: var(--c-darkgray);
 }
@@ -18,12 +22,11 @@
     list-style: none;
 }
 
-.installation-div {
+.setup-div {
     display: none;
 }
 
-.documentation-div {
-    overflow-x: auto;
+.doc-div {
     display: flex;
 }
 
