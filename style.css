@@ -40,7 +40,7 @@
     display: flex;
 }
 
-.install-para {
+.color-dgray {
     color: var(--c-darkgray);
 }
 
@@ -71,11 +71,12 @@
 .margin-top-xlg {
     margin-top: 2rem;
 }
-aside > ul {
-    background: lightgreen;
+
+aside {
+    width: 10rem;
 }
 aside > ul >li{
-    background: lightyellow;
+    height: 3rem;
     list-style: none;
 }
 
@@ -83,9 +84,9 @@ aside > ul >li:hover{
     cursor: pointer;
 }
 
-a {
+aside a {
+    height: 100%;
     text-decoration: none;
-    color: var(--c-black);
 }
 
 .pos-sticky {
@@ -93,3 +94,4 @@ a {
     top: 0;
     left: 0;
 }
+
