@@ -23,6 +23,7 @@
 }
 
 .documentation-div {
+    overflow-x: auto;
     display: flex;
 }
 
@@ -39,12 +40,7 @@ aside > ul >li{
 }
 
 aside a {
+    width: 10rem;
     height: 100%;
     text-decoration: none;
-}
-
-@media screen and (max-width: 500px) {
-    aside {
-        width: 20rem;
-    }
 }
