@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.color-dgray {
+    color: var(--c-darkgray);
+}
+
 .header-wrapper {
     color: var(--c-blue);
     border-bottom-style: solid;
@@ -32,10 +36,6 @@
     display: flex;
 }
 
-.color-dgray {
-    color: var(--c-darkgray);
-}
-
 aside {
     width: 10rem;
     border-right-style: solid;
@@ -48,19 +48,9 @@ aside > ul >li{
     list-style: none;
 }
 
-aside > ul >li:hover{
-    cursor: pointer;
-}
-
 aside a {
     height: 100%;
     text-decoration: none;
-}
-
-.pos-sticky {
-    position: sticky;
-    top: 0;
-    left: 0;
 }
 
 @media screen and (max-width: 500px) {
