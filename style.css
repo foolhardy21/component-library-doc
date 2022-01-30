@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.overflow-x {
+    overflow-x: auto;
+}
+
 .color-dgray {
     color: var(--c-darkgray);
 }
@@ -22,13 +26,12 @@ html {
     list-style: none;
 }
 
-.installation-div {
+.setup-div {
     display: none;
 }
 
-.documentation-div {
+.doc-div {
     display: flex;
-    overflow-x: auto;
 }
 
 aside {
