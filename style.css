@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
 }
 
 /* .grid-1 {
@@ -33,11 +33,11 @@
 }
 
 .installation-div {
-    display: block;
+    display: none;
 }
 
 .documentation-div {
-    display: none;
+    display: flex;
 }
 
 .install-para {
@@ -60,16 +60,36 @@
     margin-bottom: 2rem;
 }
 
-.code-snippet {
-    /* margin: 1rem 0; */
-}
-/* .main-wrapper {
-    grid-column: 1/6;
-    grid-row: 2/3;
+.margin-top-md {
+    margin-top: 1rem;
 }
 
-.footer-wrapper {
-    background: var(--c-lightblue);
-    grid-column: 1/6;
-    grid-row: 3/4;
-} */
+.margin-top-lg {
+    margin-top: 1.5rem;
+}
+
+.margin-top-xlg {
+    margin-top: 2rem;
+}
+aside > ul {
+    background: lightgreen;
+}
+aside > ul >li{
+    background: lightyellow;
+    list-style: none;
+}
+
+aside > ul >li:hover{
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-black);
+}
+
+.pos-sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+}

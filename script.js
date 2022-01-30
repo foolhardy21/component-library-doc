@@ -7,13 +7,13 @@ const homeDiv =  document.querySelector('.installation-div')
 const docDiv =  document.querySelector('.documentation-div')
 
 homeBtn.addEventListener('click', () => {
-    homeDiv.style.display = 'block'
+    homeDiv.style.display = 'flex'
     docDiv.style.display = 'none'
 })
 
 docBtn.addEventListener('click', () => {
     homeDiv.style.display = 'none'
-    docDiv.style.display = 'block'
+    docDiv.style.display = 'flex'
 })
 
 formSubmit.addEventListener('click', () => {
