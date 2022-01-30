@@ -4,11 +4,222 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://61f50f7fbe75680008babb7b--festive-mestorf-acecb0.netlify.app/style.css'/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css'/>
     <link rel='stylesheet' href='./style.css'/>
     <title>Documentation</title>
 </head>
 <body>
+    
+    <header class='header-wrapper flex-horizontal-stretch flex-vertical-center letter-space-md padding-xxlg'>
+        <span class='font-size-xlg letter-space-lg'>DriftUI</span>
+        <nav>
+            <ul class='flex-horizontal-start font-size-md letters-space-sm'>
+                <li class='install-btn btn-filled padding-md border-radius-sm margin-right-xxlg text-capital'>setup</li>
+                <li class='doc-btn btn-filled padding-md border-radius-sm text-capital'>docs</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class='setup-div padding-xxlg flex-column flex-center'>
+        <p class='color-dgray font-size-md margin-btm-md'>To use DriftUI, add the following stylesheets to your html. The first one is for the material icons which are used throughout the component library. The second stylesheet is the component library.</p>        
+    </div>
+
+    <div class='doc-div flex-row'>
+        
+        <aside class='margin-right-md text-capital'>
+            <ul class='pos-sticky top-0'>
+                <li class='margin-btm-sm'>
+                    <a href='#alerts' class='flex-center btn-text'>
+                        alert
+                    </a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#buttons' class='flex-center btn-text'>button</a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class='overflow-x'>
+            <div id='alerts'>
+
+                <p class='font-size-lg margin-btm-md text-uppercase'>Alerts</p>
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>basic error</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-basic border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons icon-color-red">
+                            error
+                        </span>
+                        This is an error alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>basic warning</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-basic border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons icon-color-yellow">
+                            warning
+                        </span>
+                        This is a warning alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>basic success</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-basic border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons icon-color-green">
+                            check_circle
+                        </span>
+                        This is a success alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>flex-horizontal-stretch sets justify-content to space-between.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>font-size-md gives a font-size of 1.2rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>flex-vertical-center sets align-items to center with flex-direction as row.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>text-capital to set text-transform to capitalize.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>padding-md gives a padding of 0.5rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>font-size-sm sets font-size to 1rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>letter-space-sm sets letter-spacing to 0.01rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>alert-basic sets the font and background colors.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>outlined error</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md container-outlined alert-error-outlined border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            error
+                        </span>
+                        This is an error alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>outlined warning</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md container-outlined alert-warning-outlined border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            warning
+                        </span>
+                        This is a warning alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>outlined success</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md container-outlined alert-success-outlined border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            check_circle
+                        </span>
+                        This is a success alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>container-outlined sets the border-style to solid and background to transparent.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>container-success-outlined sets the respective font and border-colors.</p>
+                                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>contained error</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-error-filled border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            error
+                        </span>
+                        This is an error alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+               
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>contained warning</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-warning-filled border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            warning
+                        </span>
+                        This is a warning alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>contained success</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-success-filled border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            check_circle
+                        </span>
+                        This is a success alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-xlg'>container-success-filled sets the respective font and background colors.</p>
+
+            </div>
+
+            <div id='buttons'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>Buttons</p>
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>text buttons</p>
+                <button class='btn-text font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'>
+                    text
+                </button>
+                <button class='btn-text font-size-md padding-lg text-uppercase text-bold letter-space-sm border-radius-sm'>
+                    text
+                </button>
+                <button class='btn-text font-size-lg padding-xlg text-uppercase text-bold letter-space-md border-radius-sm margin-btm-sm'>
+                    text
+                </button>
+                <p class='color-dgray margin-left-md margin-btm-sm'>btn-text sets border-style to none and sets the background to transparent. It also sets the font-color.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>border radius-sm sets the border-radius to 5px.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>On hover the background color is updated using :hover pseudo class.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm' >contained buttons</p>
+                <button class='btn-filled font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'>filled</button>
+                <button class='btn-filled font-size-md padding-lg text-uppercase text-bold letter-space-sm border-radius-sm'>filled</button>
+                <button class='btn-filled font-size-lg padding-xlg text-uppercase text-bold letter-space-md border-radius-sm margin-btm-sm'>filled</button>
+                <p class='color-dgray margin-left-md margin-btm-sm'>btn-filled sets the background and font color and sets the border-style to none.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>On hover, the behaviour is same as text button, only the background color set is different.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>outlined buttons</p>
+                <button class='btn-outlined text-uppercase text-bold font-size-sm padding-md letter-space-sm border-radius-sm'>outlined</button>
+                <button class='btn-outlined text-uppercase text-bold font-size-md padding-lg letter-space-sm border-radius-sm'>outlined</button>
+                <button class='btn-outlined text-uppercase text-bold font-size-lg padding-xlg letter-space-md border-radius-sm margin-btm-sm'>outlined</button>
+                <p class='color-dgray margin-left-md margin-btm-lg'>btn-outlined sets a solid border with thin border-width and sets a transparent background.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>buttons with icons</p>
+                <button class='btn-outlined flex-center text-uppercase text-bold padding-md font-size-sm letter-space-sm border-radius-sm margin-btm-sm'>
+                    <span class='material-icons'>
+                        delete
+                    </span>
+                    delete
+                </button>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>icons with contained buttons</p>
+                <button class='btn-filled flex-center text-uppercase text-bold padding-md font-size-sm letter-space-sm border-radius-sm margin-btm-sm'>
+                    <span class='material-icons'>
+                        delete
+                    </span>
+                    delete
+                </button>
+                <p class='color-dgray margin-left-md margin-btm-lg'>flex-center sets the contents of button at the center of major and cross axis.</p>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>icon button</p>
+                <button class='btn-text padding-lg flex-center border-radius-circle'>
+                    <span class='material-icons'>alarm</span>
+                </button>
+                <p class='color-dgray margin-left-md margin-btm-sm'>border-radius-circle makes the border-radius of 50%.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>padding-lg sets the padding of 0.6rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>:hover is used to update the background color.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>functioning float action button is in the bottom right corner.</p>
+            </div>
+        </main>
+             
+    </div>
+    <button class='float-btn btn-text padding-lg flex-center pos-fixed bottom-right-5 border-radius-circle'>
+            <span class='material-icons'>arrow_upward</span>
+    </button>
+
+    <footer class='footer-wrapper'></footer>  
     
 </body>
 <script src='script.js'></script>

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.overflow-x {
+    overflow-x: auto;
+}
+
+.color-dgray {
+    color: var(--c-darkgray);
+}
+
+.header-wrapper {
+    color: var(--c-blue);
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: var(--c-lightgray);
+}
+
+.install-btn, .doc-btn {
+    list-style: none;
+}
+
+.setup-div {
+    display: none;
+}
+
+.doc-div {
+    display: flex;
+}
+
+aside {
+    border-right-style: solid;
+    border-width: thin;
+    border-color: var(--c-lightgray);
+}
+
+aside > ul >li{
+    height: 3rem;
+    list-style: none;
+}
+
+aside a {
+    width: 10rem;
+    height: 100%;
+    text-decoration: none;
+}
+
