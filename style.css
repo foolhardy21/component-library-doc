@@ -3,32 +3,24 @@
     padding: 0;
 }
 
-/* .grid-1 {
-    display: grid;
-    grid-template-rows: repeat(1fr, 3);
-    grid-template-columns: repeat(1fr, 5);
-}
-
-.logo-wrapper {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    color: var(--c-blue);
-} */
-
 .header-wrapper {
-    color: var(--c-white);
-    background: var(--c-blue);
+    color: var(--c-blue);
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: var(--c-lightgray);
 }
 
 .install-btn, .doc-btn {
     list-style: none;
 }
+
 .install-btn:hover {
-    color: var(--c-yellow);
+    text-decoration: underline;
     cursor: pointer;
 } 
+
 .doc-btn:hover {
-    color: var(--c-yellow);
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -44,37 +36,13 @@
     color: var(--c-darkgray);
 }
 
-.margin-btm-sm {
-    margin-bottom: 0.7rem;
-}
-
-.margin-btm-md {
-    margin-bottom: 1rem;
-}
-
-.margin-btm-lg {
-    margin-bottom: 1.5rem;
-}
-
-.margin-btm-xlg {
-    margin-bottom: 2rem;
-}
-
-.margin-top-md {
-    margin-top: 1rem;
-}
-
-.margin-top-lg {
-    margin-top: 1.5rem;
-}
-
-.margin-top-xlg {
-    margin-top: 2rem;
-}
-
 aside {
     width: 10rem;
+    border-right-style: solid;
+    border-width: thin;
+    border-color: var(--c-lightgray);
 }
+
 aside > ul >li{
     height: 3rem;
     list-style: none;
@@ -95,3 +63,8 @@ aside a {
     left: 0;
 }
 
+@media screen and (max-width: 500px) {
+    aside {
+        display: none;
+    }
+}
