@@ -15,12 +15,12 @@
 }
 
 .install-btn:hover {
-    text-decoration: underline;
+    color: var(--c-darkgray);
     cursor: pointer;
 } 
 
 .doc-btn:hover {
-    text-decoration: underline;
+    color: var(--c-darkgray);
     cursor: pointer;
 }
 
