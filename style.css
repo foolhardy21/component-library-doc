@@ -28,10 +28,10 @@ html {
 
 .documentation-div {
     display: flex;
+    overflow-x: auto;
 }
 
 aside {
-    width: 10rem;
     border-right-style: solid;
     border-width: thin;
     border-color: var(--c-lightgray);
@@ -43,12 +43,8 @@ aside > ul >li{
 }
 
 aside a {
+    width: 10rem;
     height: 100%;
     text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
-    aside {
-        width: 20rem;
-    }
-}
