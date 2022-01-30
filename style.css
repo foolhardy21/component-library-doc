@@ -1,25 +1,75 @@
 * {
     margin: 0;
+    /* padding: 0; */
 }
 
-.grid-1 {
+/* .grid-1 {
     display: grid;
-    grid-template-areas: "header header header header header"
-                        "main main main main main"
-                        "footer footer footer footer footer";
+    grid-template-rows: repeat(1fr, 3);
+    grid-template-columns: repeat(1fr, 5);
 }
+
+.logo-wrapper {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: var(--c-blue);
+} */
 
 .header-wrapper {
-    background: var(--c-red);
-    grid-area: header;
+    color: var(--c-white);
+    background: var(--c-blue);
 }
 
-.main-wrapper {
-    background: var(--c-yellow);
-    grid-area: main;
+.install-btn, .doc-btn {
+    list-style: none;
+}
+.install-btn:hover {
+    color: var(--c-yellow);
+    cursor: pointer;
+} 
+.doc-btn:hover {
+    color: var(--c-yellow);
+    cursor: pointer;
+}
+
+.installation-div {
+    display: block;
+}
+
+.documentation-div {
+    display: none;
+}
+
+.install-para {
+    color: var(--c-darkgray);
+}
+
+.margin-btm-sm {
+    margin-bottom: 0.7rem;
+}
+
+.margin-btm-md {
+    margin-bottom: 1rem;
+}
+
+.margin-btm-lg {
+    margin-bottom: 1.5rem;
+}
+
+.margin-btm-xlg {
+    margin-bottom: 2rem;
+}
+
+.code-snippet {
+    /* margin: 1rem 0; */
+}
+/* .main-wrapper {
+    grid-column: 1/6;
+    grid-row: 2/3;
 }
 
 .footer-wrapper {
-    background: var(--c-green);
-    grid-area: footer;
-}
+    background: var(--c-lightblue);
+    grid-column: 1/6;
+    grid-row: 3/4;
+} */

@@ -4,17 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel='stylesheet' href='https://61f50f7fbe75680008babb7b--festive-mestorf-acecb0.netlify.app/style.css'/>
     <link rel='stylesheet' href='./style.css'/>
     <title>Documentation</title>
 </head>
 <body>
-    <div class='grid-1'>
-        <header class='header-wrapper'>
-            <figure>Drift</figure>
-        </header>
-        <main class='main-wrapper'>main</main>
-        <footer class='footer-wrapper'>footer</footer>  
+    
+    <header class='header-wrapper flex-horizontal-stretch flex-vertical-center letter-space-md padding-xxlg'>
+        <span class='font-size-lg'>DriftUI</span>
+        <nav>
+            <ul class='flex-horizontal-start font-size-md letters-space-sm'>
+                <li class='install-btn margin-right-xxlg'>Installation</li>
+                <li class='doc-btn'>Documentation</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class='installation-div padding-xxlg'>
+        <p class='install-para font-size-md margin-btm-md'>To use DriftUI, add the following stylesheets to your html. The first one is for the material icons which are used throughout the component library. The second stylesheet is the component library.</p>
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28207%2C226%2C252%2C1%29&t=duotone-dark&wt=none&l=javascript&width=806.75&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520href%253D%2522https%253A%252F%252Ffonts.googleapis.com%252Ficon%253Ffamily%253DMaterial%252BIcons%2522%250A%2520%2520%2520%2520%2520%2520rel%253D%2522stylesheet%2522%253E%250A%253Clink%2520rel%253D%27stylesheet%27%2520href%253D%27https%253A%252F%252F61f50f7fbe75680008babb7b--festive-mestorf-acecb0.netlify.app%252Fstyle.css%27%252F%253E"
+        style="width: 50rem; height: 18rem; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+    </div>
+
+    <div class='documentation-div padding-xxlg'>
+             <p class='font-size-lg margin-btm-md text-uppercase'>badges</p>
+             <p class='font-size-md text-capital'>small notification badges</p>
+             <div class='badge-size-sm badge-green border-radius-circle'></div>
+             <div class='badge-size-sm badge-red border-radius-circle'></div>
+             <div class='badge-size-sm badge-yellow border-radius-circle'></div>
+             <div class='badge-size-sm badge-blue border-radius-circle margin-btm-md'></div>
+         
+             <p class='font-size-md text-capital'>medium notification badges</p>
+             <div class='badge-size-md badge-green border-radius-circle'></div>
+             <div class='badge-size-md badge-red border-radius-circle'></div>
+             <div class='badge-size-md badge-yellow border-radius-circle'></div>
+             <div class='badge-size-md badge-blue border-radius-circle margin-btm-md'></div>
+             
+             <p class='font-size-md text-capital'>text only badges</p>
+             <div class='badge-size-sm badge-text-sm flex-center padding-sm border-radius-circle badge-blue margin-btm-md'>
+                 4
+             </div>
+         
+             <p class='font-size-md text-capital'>badges on icon bottom right</p>
+             <div class='inline-block pos-relative'>
+                 <span class='material-icons'>account_balance</span>
+                 <div class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'>1</div>
+             </div>
+             <div class='inline-block pos-relative margin-btm-md'>
+                 <span class='material-icons'>account_balance</span>
+                 <div class='badge-size-sm padding-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'>1</div>
+             </div>
+             
+             <p class='font-size-md text-capital'>badges on icon top right</p>
+             <div class='inline-block pos-relative'>
+                 <span class='material-icons'>account_balance</span>
+                 <div class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute bottom-left-60'>1</div>
+             </div>
+             <div class='inline-block pos-relative margin-btm-md'>
+                 <span class='material-icons'>account_balance</span>
+                 <div class='badge-size-sm padding-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute bottom-left-60'>1</div>
+             </div>
+         
+             <p class='font-size-md text-capital'>notification badges on icon</p>
+             <div class='inline-block pos-relative'>
+                 <span class='material-icons'>account_balance</span>
+                 <div class='badge-size-sm border-radius-circle badge-red pos-absolute top-left-60'></div>
+             </div>
+             <div class='inline-block pos-relative margin-btm-xlg'>
+                 <span class='material-icons'>account_balance</span>
+                 <div class='badge-size-sm border-radius-circle badge-green pos-absolute top-left-60'></div>
+             </div>
+             
+             <!-- <h1>Avatars</h1>
+             <h3>different sizes</h3>
+             <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+             <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-md border-radius-circle' />
+             <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-lg border-radius-circle'>
+             <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-xlg border-radius-circle'>
+             
+             <h3>avatar group</h3>
+             <div class='inline-block'>
+                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-border-blue border-thin border-radius-circle' />
+                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />
+                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />
+                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />    
+             </div>
+             
+             <h3>avatars with badge</h3>
+             <div class='inline-block pos-relative'>
+                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                 <div class='badge-green border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+             </div>
+         
+             <div class='inline-block pos-relative'>
+                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                 <div class='badge-yellow border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+             </div>
+             
+             <div class='inline-block pos-relative'>
+                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                 <div class='badge-red border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+             </div><br/>
+             
+             <div class='inline-block pos-relative'>
+                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                 <div class='badge-blue border-radius-circle badge-size-md pos-absolute top-left-70'></div>
+             </div> -->
+
+        <footer class='footer-wrapper'></footer>  
     </div>
     
 </body>
