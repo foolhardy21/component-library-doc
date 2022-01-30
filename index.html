@@ -38,6 +38,12 @@
                 <li class='margin-btm-sm'>
                     <a href='#buttons' class='flex-center btn-text'>button</a>
                 </li>
+                <li class='margin-btm-sm'>
+                    <a href='#images' class='flex-center btn-text'>image</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#inputs' class='flex-center btn-text'>input</a>
+                </li>
             </ul>
         </aside>
 
@@ -211,6 +217,30 @@
                 <p class='color-dgray margin-left-md margin-btm-sm'>padding-lg sets the padding of 0.6rem.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>:hover is used to update the background color.</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>functioning float action button is in the bottom right corner.</p>
+            </div>
+            <div id='images'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>Images</p>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>responsive image</p>
+                <img src='https://picsum.photos/500/500' alt='Random Image' class='img-lg img-cover margin-btm-md margin-left-md' />
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>round image</p>
+                <img src='https://picsum.photos/500/500' alt='Random Image' class='img-sm border-radius-circle img-cover margin-btm-sm margin-left-md' />
+                <p class='color-dgray margin-left-md margin-btm-sm'>img-lg gives the image a width and height of 25rem. So it is responsive by default as rem is updated in medai queries at 900px and 700px viewport width.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>border-radius-circle sets the order-radius to 50%.Hence, round image.</p>
+            </div>
+
+            <div id='inputs'>
+                <p class='font-size-lg margin-btm-md margin-top-md text-uppercase'>Inputs</p>
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>normal input</p>
+                <input type='text' class='input-md padding-xxlg border-thin input-border-btm margin-btm-md margin-left-md' placeholder="Enter here..." />
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>error on submit</p>
+                <input id='input' type='text' class='input-md padding-xxlg border-thin input-border-btm margin-left-md' placeholder="Enter here..."/>
+                <button id='submit-btn' class='btn-filled padding-md margin-btm-lg'>submit</button>
+                <p class='color-dgray margin-left-md margin-btm-sm'>input-md sets the width of input element to 15rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>border-thin sets border-style to solid and border-width to thin.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>input-border-btm removes all the border except border-bottom.</p>
             </div>
         </main>
              
