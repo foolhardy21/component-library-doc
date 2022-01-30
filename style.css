@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.color-dgray {
+    color: var(--c-darkgray);
+}
+
+.header-wrapper {
+    color: var(--c-blue);
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: var(--c-lightgray);
+}
+
+.install-btn, .doc-btn {
+    list-style: none;
+}
+
+.installation-div {
+    display: none;
+}
+
+.documentation-div {
+    display: flex;
+}
+
+aside {
+    width: 10rem;
+    border-right-style: solid;
+    border-width: thin;
+    border-color: var(--c-lightgray);
+}
+
+aside > ul >li{
+    height: 3rem;
+    list-style: none;
+}
+
+aside a {
+    height: 100%;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    aside {
+        width: 20rem;
+    }
+}
