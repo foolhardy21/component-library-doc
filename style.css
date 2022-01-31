@@ -9,10 +9,20 @@ html {
 
 .overflow-x {
     overflow-x: auto;
+    padding-right: 5px;
+}
+
+.setup-link {
+    color: var(--c-yellow);
+    background: var(--c-darkgray);
 }
 
 .color-dgray {
     color: var(--c-darkgray);
+}
+
+.color-gray {
+    color: var(--c-gray);
 }
 
 .header-wrapper {
@@ -22,16 +32,20 @@ html {
     border-color: var(--c-lightgray);
 }
 
+.install-btn {
+    display: none;
+}
+
 .install-btn, .doc-btn {
     list-style: none;
 }
 
 .setup-div {
-    display: none;
+    display: flex;
 }
 
 .doc-div {
-    display: flex;
+    display: none;
 }
 
 aside {
@@ -49,4 +63,11 @@ aside a {
     width: 10rem;
     height: 100%;
     text-decoration: none;
+}
+
+pre {
+    width: 40rem;
+    overflow:auto;
+    background: var(--c-darkgray);
+    color: var(--c-white);
 }
