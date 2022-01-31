@@ -27,21 +27,131 @@
     </div>
 
     <div class='doc-div flex-row'>
-        
+
         <aside class='margin-right-md text-capital'>
             <ul class='pos-sticky top-0'>
                 <li class='margin-btm-sm'>
-                    <a href='#alerts' class='flex-center btn-text'>
-                        alert
-                    </a>
+                    <a href='#badges' class='flex-center btn-text'>badge</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#avatars' class='flex-center btn-text'>avatar</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#alerts' class='flex-center btn-text'>alert</a>
                 </li>
                 <li class='margin-btm-sm'>
                     <a href='#buttons' class='flex-center btn-text'>button</a>
                 </li>
             </ul>
         </aside>
-
+      
         <main class='overflow-x'>
+           
+            <div id='badges'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>badges</p>
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>small notification badges</p>
+                <div class='badge-size-sm badge-green border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-sm badge-red border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-sm badge-yellow border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-sm badge-blue border-radius-circle margin-btm-sm'></div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>badge-size-sm is for small notification badges. It gives width and height of 0.7rem to the div. For larger sizes, refer the examples shown below this.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>badge-blue is for the fill color of the badge. Replace -blue with other options i.e -red, -green or -yellow.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>border-radius-circle gives the border radius of 50%.</p>
+            
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>medium notification badges</p>
+                <div class='badge-size-md badge-green border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-md badge-red border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-md badge-yellow border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-md badge-blue border-radius-circle margin-btm-sm'></div>
+                <p class='color-dgray margin-left-md margin-btm-lg'>Everything is same as above with the only difference being the class badge-size-md. It gives width and height of 1rem to the div.</p>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>text only badges</p>
+                <div class='badge-size-sm badge-text-sm flex-center padding-sm border-radius-circle badge-blue margin-btm-sm'>
+                    4
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>Most of the classes are saame as notification badges. Additionally, here you can set a numeric value as the value of div.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>flex-center is to center the text both vertically and horizontally</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>padding-sm is to give the padding of 0.2rem. Replace it with -md to give a padding of 0.5rem.</p>
+            
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>badges on icon bottom right</p>
+                <div class='inline-block pos-relative margin-right-md'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'>1</div>
+                </div>
+                <div class='inline-block pos-relative margin-btm-md'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm padding-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'>1</div>
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>pos-relative sets the parent wrapper as relatively positioned.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>pos-absolute sets the icon wrapper as absolutely positioned with respect to parent wrapper.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>Along with this top-left-60 places it in the bottom right corner, 70% from top and left. Replace -60 with -70 or -100 to get respective results.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-md'>badges on icon top right</p>
+                <div class='inline-block pos-relative'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute bottom-left-60'>1</div>
+                </div>
+                <div class='inline-block pos-relative margin-btm-md'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm padding-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute bottom-left-60'>1</div>
+                </div>
+            
+                <p class='font-size-md text-capital color-dgray'>notification badges on icon</p>
+                <div class='inline-block pos-relative'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm border-radius-circle badge-red pos-absolute top-left-60'></div>
+                </div>
+                <div class='inline-block pos-relative margin-btm-xlg'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm border-radius-circle badge-green pos-absolute top-left-60'></div>
+                </div>
+            </div>
+
+            <div id='avatars'>
+                <p class='font-size-lg text-uppercase margin-top-md margin-btm-md'>Avatars</p>
+                <p class='font-size-md text-capital color-dgray' >different sizes</p>
+                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-md border-radius-circle' />
+                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-lg border-radius-circle'>
+                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-xlg border-radius-circle'>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>avatar class sets the object-fit to cover</p>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>avatar-size-sm gives the width and height of 3rem to the image.</p>
+                
+                <p class='font-size-md margin-top-md text-capital color-dgray'>avatar group</p>
+                <div class='inline-block margin-top-md'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-border-blue border-thin border-radius-circle' />
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />    
+                </div>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>avatar-overlap sets the left margin of the image to a negative value.</p>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>border-thin sets the border-width to thin and border-style to solid.</p>
+                
+                <p class='font-size-md margin-top-md text-capital color-dgray'>avatars with badge</p>
+                <div class='inline-block pos-relative margin-top-md'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                    <div class='badge-green border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+                </div>
+
+                <div class='inline-block pos-relative'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                    <div class='badge-yellow border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+                </div>
+                
+                <div class='inline-block pos-relative'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                    <div class='badge-red border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+                </div><br/>
+                
+                <div class='inline-block pos-relative'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                    <div class='badge-blue border-radius-circle badge-size-md pos-absolute top-left-70'></div>
+                </div>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>pos-relative is applied on parent wrapper.</p>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>pos-absolute is applied on icon. top-left-70 sets the icon's top and left to 70%.</p>
+
+            </div>
+
             <div id='alerts'>
 
                 <p class='font-size-lg margin-btm-md text-uppercase'>Alerts</p>
@@ -212,12 +322,13 @@
                 <p class='color-dgray margin-left-md margin-btm-sm'>:hover is used to update the background color.</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>functioning float action button is in the bottom right corner.</p>
             </div>
+
         </main>
-             
-    </div>
-    <button class='float-btn btn-text padding-lg flex-center pos-fixed bottom-right-5 border-radius-circle'>
+        <button class='float-btn btn-text padding-lg flex-center pos-fixed bottom-right-5 border-radius-circle'>
             <span class='material-icons'>arrow_upward</span>
-    </button>
+        </button>         
+    </div>
+    
 
     <footer class='footer-wrapper'></footer>  
     
