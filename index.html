@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
+      rel="stylesheet">
     <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css'/>
     <link rel='stylesheet' href='./style.css'/>
     <title>Documentation</title>
 </head>
 <body>
+    
     <header class='header-wrapper flex-horizontal-stretch flex-vertical-center letter-space-md padding-xxlg'>
         <span class='font-size-xlg letter-space-lg'>Drift_UI</span>
         <nav>
@@ -29,7 +30,9 @@
             <a class='font-size-md margin-left-md btn-outlined padding-xlg border-radius-sm text-capital' href='https://github.com/foolhardy21/component-library' target='_blank' >github</a>
             <button class='margin-left-md font-size-md doc-btn btn-filled padding-xlg border-radius-sm text-capital'>docs</button>      
         </div>
+        
         <img src='./car.svg' id='drift-logo' class='img-sm' alt='speeding-car' />  
+    
     </div>
 
     <div class='doc-div flex-row'>
@@ -37,14 +40,31 @@
         <aside class='margin-right-md text-capital'>
             <ul class='pos-sticky top-0'>
                 <li class='margin-btm-sm'>
-                    <a href='#cards' class='flex-center btn-text'>
-                        card
-                    </a>
+                    <a href='#cards' class='flex-center btn-text'>card</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#badges' class='flex-center btn-text'>badge</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#avatars' class='flex-center btn-text'>avatar</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#alerts' class='flex-center btn-text'>alert</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#buttons' class='flex-center btn-text'>button</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#images' class='flex-center btn-text'>image</a>
+                </li>
+                <li class='margin-btm-sm'>
+                    <a href='#inputs' class='flex-center btn-text'>input</a>
                 </li>
             </ul>
         </aside>
-
+      
         <main class='overflow-x'>
+            
             <div id='cards'>
                 <p class='font-size-lg margin-btm-md text-uppercase'>Cards</p>
                 <p class='font-size-md text-capital color-dgray margin-btm-sm'>text only card</p>
@@ -293,11 +313,317 @@
                 </article>
                 <p class='color-dgray margin-left-md margin-btm-lg'>card-horizontal-end applies flex-end on the footer element to keep the icons at the end on the major axis.</p>
             </div>
-        </main>
+          
+            <div id='badges'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>badges</p>
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>small notification badges</p>
+                <div class='badge-size-sm badge-green border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-sm badge-red border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-sm badge-yellow border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-sm badge-blue border-radius-circle margin-btm-sm'></div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>badge-size-sm is for small notification badges. It gives width and height of 0.7rem to the div. For larger sizes, refer the examples shown below this.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>badge-blue is for the fill color of the badge. Replace -blue with other options i.e -red, -green or -yellow.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>border-radius-circle gives the border radius of 50%.</p>
+            
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>medium notification badges</p>
+                <div class='badge-size-md badge-green border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-md badge-red border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-md badge-yellow border-radius-circle margin-btm-sm'></div>
+                <div class='badge-size-md badge-blue border-radius-circle margin-btm-sm'></div>
+                <p class='color-dgray margin-left-md margin-btm-lg'>Everything is same as above with the only difference being the class badge-size-md. It gives width and height of 1rem to the div.</p>
 
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>text only badges</p>
+                <div class='badge-size-sm badge-text-sm flex-center padding-sm border-radius-circle badge-blue margin-btm-sm'>
+                    4
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>Most of the classes are saame as notification badges. Additionally, here you can set a numeric value as the value of div.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>flex-center is to center the text both vertically and horizontally</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>padding-sm is to give the padding of 0.2rem. Replace it with -md to give a padding of 0.5rem.</p>
+            
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>badges on icon bottom right</p>
+                <div class='inline-block pos-relative margin-right-md'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'>1</div>
+                </div>
+                <div class='inline-block pos-relative margin-btm-md'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm padding-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'>1</div>
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>pos-relative sets the parent wrapper as relatively positioned.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>pos-absolute sets the icon wrapper as absolutely positioned with respect to parent wrapper.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>Along with this top-left-60 places it in the bottom right corner, 70% from top and left. Replace -60 with -70 or -100 to get respective results.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-md'>badges on icon top right</p>
+                <div class='inline-block pos-relative'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute bottom-left-60'>1</div>
+                </div>
+                <div class='inline-block pos-relative margin-btm-md'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm padding-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute bottom-left-60'>1</div>
+                </div>
+            
+                <p class='font-size-md text-capital color-dgray'>notification badges on icon</p>
+                <div class='inline-block pos-relative'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm border-radius-circle badge-red pos-absolute top-left-60'></div>
+                </div>
+                <div class='inline-block pos-relative margin-btm-xlg'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-sm border-radius-circle badge-green pos-absolute top-left-60'></div>
+                </div>
+            </div>
+
+            <div id='avatars'>
+                <p class='font-size-lg text-uppercase margin-top-md margin-btm-md'>Avatars</p>
+                <p class='font-size-md text-capital color-dgray' >different sizes</p>
+                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-md border-radius-circle' />
+                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-lg border-radius-circle'>
+                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-xlg border-radius-circle'>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>avatar class sets the object-fit to cover</p>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>avatar-size-sm gives the width and height of 3rem to the image.</p>
+                
+                <p class='font-size-md margin-top-md text-capital color-dgray'>avatar group</p>
+                <div class='inline-block margin-top-md'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-border-blue border-thin border-radius-circle' />
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />    
+                </div>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>avatar-overlap sets the left margin of the image to a negative value.</p>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>border-thin sets the border-width to thin and border-style to solid.</p>
+                
+                <p class='font-size-md margin-top-md text-capital color-dgray'>avatars with badge</p>
+                <div class='inline-block pos-relative margin-top-md'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                    <div class='badge-green border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+                </div>
+
+                <div class='inline-block pos-relative'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                    <div class='badge-yellow border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+                </div>
+                
+                <div class='inline-block pos-relative'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                    <div class='badge-red border-radius-circle badge-size-sm pos-absolute top-left-70'></div>
+                </div><br/>
+                
+                <div class='inline-block pos-relative'>
+                    <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                    <div class='badge-blue border-radius-circle badge-size-md pos-absolute top-left-70'></div>
+                </div>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>pos-relative is applied on parent wrapper.</p>
+                <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>pos-absolute is applied on icon. top-left-70 sets the icon's top and left to 70%.</p>
+
+            </div>
+
+            <div id='alerts'>
+
+                <p class='font-size-lg margin-btm-md text-uppercase'>Alerts</p>
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>basic error</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-basic border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons icon-color-red">
+                            error
+                        </span>
+                        This is an error alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>basic warning</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-basic border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons icon-color-yellow">
+                            warning
+                        </span>
+                        This is a warning alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>basic success</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-basic border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons icon-color-green">
+                            check_circle
+                        </span>
+                        This is a success alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>flex-horizontal-stretch sets justify-content to space-between.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>font-size-md gives a font-size of 1.2rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>flex-vertical-center sets align-items to center with flex-direction as row.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>text-capital to set text-transform to capitalize.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>padding-md gives a padding of 0.5rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>font-size-sm sets font-size to 1rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>letter-space-sm sets letter-spacing to 0.01rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>alert-basic sets the font and background colors.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>outlined error</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md container-outlined alert-error-outlined border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            error
+                        </span>
+                        This is an error alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>outlined warning</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md container-outlined alert-warning-outlined border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            warning
+                        </span>
+                        This is a warning alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>outlined success</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md container-outlined alert-success-outlined border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            check_circle
+                        </span>
+                        This is a success alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-sm'>container-outlined sets the border-style to solid and background to transparent.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>container-success-outlined sets the respective font and border-colors.</p>
+                                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>contained error</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-error-filled border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            error
+                        </span>
+                        This is an error alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+               
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>contained warning</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-warning-filled border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            warning
+                        </span>
+                        This is a warning alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>contained success</p>
+                <div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-success-filled border-radius-sm margin-btm-lg'>
+                    <div class='flex-vertical-center'>
+                        <span class="material-icons">
+                            check_circle
+                        </span>
+                        This is a success alert — check it out!
+                    </div>
+                    <span class='material-icons icon-close'>close</span>
+                </div>
+                <p class='color-dgray margin-left-md margin-btm-xlg'>container-success-filled sets the respective font and background colors.</p>
+
+            </div>
+
+            <div id='buttons'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>Buttons</p>
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>text buttons</p>
+                <button class='btn-text font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'>
+                    text
+                </button>
+                <button class='btn-text font-size-md padding-lg text-uppercase text-bold letter-space-sm border-radius-sm'>
+                    text
+                </button>
+                <button class='btn-text font-size-lg padding-xlg text-uppercase text-bold letter-space-md border-radius-sm margin-btm-sm'>
+                    text
+                </button>
+                <p class='color-dgray margin-left-md margin-btm-sm'>btn-text sets border-style to none and sets the background to transparent. It also sets the font-color.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>border radius-sm sets the border-radius to 5px.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>On hover the background color is updated using :hover pseudo class.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm' >contained buttons</p>
+                <button class='btn-filled font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'>filled</button>
+                <button class='btn-filled font-size-md padding-lg text-uppercase text-bold letter-space-sm border-radius-sm'>filled</button>
+                <button class='btn-filled font-size-lg padding-xlg text-uppercase text-bold letter-space-md border-radius-sm margin-btm-sm'>filled</button>
+                <p class='color-dgray margin-left-md margin-btm-sm'>btn-filled sets the background and font color and sets the border-style to none.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>On hover, the behaviour is same as text button, only the background color set is different.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>outlined buttons</p>
+                <button class='btn-outlined text-uppercase text-bold font-size-sm padding-md letter-space-sm border-radius-sm'>outlined</button>
+                <button class='btn-outlined text-uppercase text-bold font-size-md padding-lg letter-space-sm border-radius-sm'>outlined</button>
+                <button class='btn-outlined text-uppercase text-bold font-size-lg padding-xlg letter-space-md border-radius-sm margin-btm-sm'>outlined</button>
+                <p class='color-dgray margin-left-md margin-btm-lg'>btn-outlined sets a solid border with thin border-width and sets a transparent background.</p>
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>buttons with icons</p>
+                <button class='btn-outlined flex-center text-uppercase text-bold padding-md font-size-sm letter-space-sm border-radius-sm margin-btm-sm'>
+                    <span class='material-icons'>
+                        delete
+                    </span>
+                    delete
+                </button>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>icons with contained buttons</p>
+                <button class='btn-filled flex-center text-uppercase text-bold padding-md font-size-sm letter-space-sm border-radius-sm margin-btm-sm'>
+                    <span class='material-icons'>
+                        delete
+                    </span>
+                    delete
+                </button>
+                <p class='color-dgray margin-left-md margin-btm-lg'>flex-center sets the contents of button at the center of major and cross axis.</p>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>icon button</p>
+                <button class='btn-text padding-lg flex-center border-radius-circle'>
+                    <span class='material-icons'>alarm</span>
+                </button>
+                <p class='color-dgray margin-left-md margin-btm-sm'>border-radius-circle makes the border-radius of 50%.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>padding-lg sets the padding of 0.6rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>:hover is used to update the background color.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>functioning float action button is in the bottom right corner.</p>
+            </div>
+
+            <div id='images'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>Images</p>
+
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>responsive image</p>
+                <img src='https://picsum.photos/500/500' alt='Random Image' class='img-lg img-cover margin-btm-md margin-left-md' />
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>round image</p>
+                <img src='https://picsum.photos/500/500' alt='Random Image' class='img-sm border-radius-circle img-cover margin-btm-sm margin-left-md' />
+                <p class='color-dgray margin-left-md margin-btm-sm'>img-lg gives the image a width and height of 25rem. So it is responsive by default as rem is updated in medai queries at 900px and 700px viewport width.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>border-radius-circle sets the order-radius to 50%.Hence, round image.</p>
+            </div>
+
+            <div id='inputs'>
+                <p class='font-size-lg margin-btm-md margin-top-md text-uppercase'>Inputs</p>
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>normal input</p>
+                <input type='text' class='input-md padding-xxlg border-thin input-border-btm margin-btm-md margin-left-md' placeholder="Enter here..." />
+                
+                <p class='font-size-md text-capital color-dgray margin-btm-sm'>error on submit</p>
+                <input id='input' type='text' class='input-md padding-xxlg border-thin input-border-btm margin-left-md' placeholder="Enter here..."/>
+                <button id='submit-btn' class='btn-filled padding-md margin-btm-lg'>submit</button>
+                <p class='color-dgray margin-left-md margin-btm-sm'>input-md sets the width of input element to 15rem.</p>
+                <p class='color-dgray margin-left-md margin-btm-sm'>border-thin sets border-style to solid and border-width to thin.</p>
+                <p class='color-dgray margin-left-md margin-btm-lg'>input-border-btm removes all the border except border-bottom.</p>
+            </div>
+      
+        </main>
+  
         <button class='float-btn btn-text padding-lg flex-center pos-fixed bottom-right-5 border-radius-circle'>
             <span class='material-icons'>arrow_upward</span>
-        </button>
+        </button>         
+  
+    </div>
+    
+    <footer class='footer-wrapper'></footer>  
     
 </body>
 <script src='script.js'></script>
