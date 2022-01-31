@@ -29,4 +29,3 @@ formSubmit.addEventListener('click', () => {
         formInput.classList.remove('input-error')
     },2000)
 })
-

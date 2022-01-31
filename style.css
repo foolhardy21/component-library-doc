@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .overflow-x {
     overflow-x: auto;
 }
@@ -31,7 +35,6 @@
 }
 
 aside {
-    width: 10rem;
     border-right-style: solid;
     border-width: thin;
     border-color: var(--c-lightgray);
