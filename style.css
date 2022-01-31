@@ -12,6 +12,11 @@ html {
     padding-right: 5px;
 }
 
+.setup-link {
+    color: var(--c-yellow);
+    background: var(--c-darkgray);
+}
+
 .color-dgray {
     color: var(--c-darkgray);
 }
@@ -28,11 +33,11 @@ html {
 }
 
 .setup-div {
-    display: none;
+    display: flex;
 }
 
 .doc-div {
-    display: flex;
+    display: none;
 }
 
 aside {
