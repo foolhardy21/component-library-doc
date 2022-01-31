@@ -40,11 +40,6 @@ window.addEventListener('resize', () => {
     }
 })
 
-docBtn.addEventListener('click', () => {
-    setupDiv.style.display = 'none'
-    docDiv.style.display = 'flex'
-})
-
 formSubmit.addEventListener('click', () => {
     formInput.value= ''
     formInput.classList.add('input-error')
