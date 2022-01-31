@@ -21,11 +21,19 @@ html {
     color: var(--c-darkgray);
 }
 
+.color-gray {
+    color: var(--c-gray);
+}
+
 .header-wrapper {
     color: var(--c-blue);
     border-bottom-style: solid;
     border-width: thin;
     border-color: var(--c-lightgray);
+}
+
+.install-btn {
+    display: none;
 }
 
 .install-btn, .doc-btn {
