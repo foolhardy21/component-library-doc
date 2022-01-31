@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css'/>
+    <link rel="stylesheet" href="/path/to/styles/default.min.css">
     <link rel='stylesheet' href='./style.css'/>
     <title>Documentation</title>
 </head>
@@ -17,7 +18,7 @@
         <nav>
             <ul class='flex-horizontal-start font-size-md letters-space-sm'>
                 <li class='install-btn btn-filled padding-md border-radius-sm margin-right-xxlg text-capital'>setup</li>
-                <li class='doc-btn doc-btn-nav btn-filled padding-md border-radius-sm text-capital'>docs</li>
+                <li class='doc-btn doc-btn-nav btn-filled padding-md border-radius-sm text-capital margin-right-xxlg'>docs</li>
             </ul>
         </nav>
     </header>
@@ -321,6 +322,11 @@
                 <div class='badge-size-sm badge-red border-radius-circle margin-btm-sm'></div>
                 <div class='badge-size-sm badge-yellow border-radius-circle margin-btm-sm'></div>
                 <div class='badge-size-sm badge-blue border-radius-circle margin-btm-sm'></div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div&gt; class='badge-size-sm badge-green border-radius-circle margin-btm-sm'&gt;&lt;/div&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>badge-size-sm is for small notification badges. It gives width and height of 0.7rem to the div. For larger sizes, refer the examples shown below this.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>badge-blue is for the fill color of the badge. Replace -blue with other options i.e -red, -green or -yellow.</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>border-radius-circle gives the border radius of 50%.</p>
@@ -330,12 +336,24 @@
                 <div class='badge-size-md badge-red border-radius-circle margin-btm-sm'></div>
                 <div class='badge-size-md badge-yellow border-radius-circle margin-btm-sm'></div>
                 <div class='badge-size-md badge-blue border-radius-circle margin-btm-sm'></div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div&gt; class='badge-size-md badge-green border-radius-circle margin-btm-sm'&gt;&lt;/div&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-lg'>Everything is same as above with the only difference being the class badge-size-md. It gives width and height of 1rem to the div.</p>
 
                 <p class='font-size-md text-capital color-dgray margin-btm-sm'>text only badges</p>
                 <div class='badge-size-sm badge-text-sm flex-center padding-sm border-radius-circle badge-blue margin-btm-sm'>
                     4
                 </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div&gt; class='badge-size-sm badge-text-sm flex-center padding-sm border-radius-circle badge-blue margin-btm-sm'&gt;
+                    4
+                &lt;/div&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>Most of the classes are saame as notification badges. Additionally, here you can set a numeric value as the value of div.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>flex-center is to center the text both vertically and horizontally</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>padding-sm is to give the padding of 0.2rem. Replace it with -md to give a padding of 0.5rem.</p>
@@ -349,6 +367,14 @@
                     <span class='material-icons'>account_balance</span>
                     <div class='badge-size-sm padding-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'>1</div>
                 </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div&gt; class='inline-block pos-relative margin-right-md'&gt;
+                &lt;span&gt; class='material-icons'>account_balance&lt;/span&gt;
+                &lt;div&gt; class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'&gt;1&lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>pos-relative sets the parent wrapper as relatively positioned.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>pos-absolute sets the icon wrapper as absolutely positioned with respect to parent wrapper.</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>Along with this top-left-60 places it in the bottom right corner, 70% from top and left. Replace -60 with -70 or -100 to get respective results.</p>
@@ -381,6 +407,11 @@
                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-md border-radius-circle' />
                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-lg border-radius-circle'>
                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-xlg border-radius-circle'>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' /&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>avatar class sets the object-fit to cover</p>
                 <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>avatar-size-sm gives the width and height of 3rem to the image.</p>
                 
@@ -391,6 +422,14 @@
                     <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />
                     <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />    
                 </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div class='inline-block margin-top-md'&gt;
+                &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-border-blue border-thin border-radius-circle' /&gt;
+                &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' /&gt;
+                &lt;/div&gt;    
+                </code>
+                </pre>
                 <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>avatar-overlap sets the left margin of the image to a negative value.</p>
                 <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>border-thin sets the border-width to thin and border-style to solid.</p>
                 
@@ -414,6 +453,14 @@
                     <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
                     <div class='badge-blue border-radius-circle badge-size-md pos-absolute top-left-70'></div>
                 </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div&gt; class='inline-block pos-relative'&gt;
+                &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' /&gt;
+                &lt;div class='badge-red border-radius-circle badge-size-sm pos-absolute top-left-70'&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-top-sm margin-left-md margin-btm-sm'>pos-relative is applied on parent wrapper.</p>
                 <p class='color-dgray margin-top-sm margin-left-md margin-btm-lg'>pos-absolute is applied on icon. top-left-70 sets the icon's top and left to 70%.</p>
 
@@ -454,6 +501,19 @@
                     </div>
                     <span class='material-icons icon-close'>close</span>
                 </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-basic border-radius-sm margin-btm-lg'&gt;
+                &lt;div class='flex-vertical-center'&gt;
+                &lt;span class="material-icons icon-color-green"&gt;
+                    check_circle
+                &lt;/span&gt;
+                    This is a success alert — check it out!
+                &lt;/div&gt;
+                &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
+                &lt;/div&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>flex-horizontal-stretch sets justify-content to space-between.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>font-size-md gives a font-size of 1.2rem.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>flex-vertical-center sets align-items to center with flex-direction as row.</p>
@@ -495,6 +555,19 @@
                     </div>
                     <span class='material-icons icon-close'>close</span>
                 </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md container-outlined alert-success-outlined border-radius-sm margin-btm-lg'&gt;
+                &lt;div class='flex-vertical-center'&gt;
+                &lt;span class="material-icons icon-color-green"&gt;
+                    check_circle
+                &lt;/span&gt;
+                    This is a success alert — check it out!
+                &lt;/div&gt;
+                &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
+                &lt;/div&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>container-outlined sets the border-style to solid and background to transparent.</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>container-success-outlined sets the respective font and border-colors.</p>
                                 
@@ -530,6 +603,19 @@
                     </div>
                     <span class='material-icons icon-close'>close</span>
                 </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-success-filled border-radius-sm margin-btm-lg'&gt;
+                &lt;div class='flex-vertical-center'&gt;
+                &lt;span class="material-icons icon-color-green"&gt;
+                    check_circle
+                &lt;/span&gt;
+                    This is a success alert — check it out!
+                &lt;/div&gt;
+                &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
+                &lt;/div&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-xlg'>container-success-filled sets the respective font and background colors.</p>
 
             </div>
@@ -546,6 +632,14 @@
                 <button class='btn-text font-size-lg padding-xlg text-uppercase text-bold letter-space-md border-radius-sm margin-btm-sm'>
                     text
                 </button>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;button class='btn-text font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'&gt;
+                    text
+                &lt;/button&gt;
+                </code>
+                </pre>
+    
                 <p class='color-dgray margin-left-md margin-btm-sm'>btn-text sets border-style to none and sets the background to transparent. It also sets the font-color.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>border radius-sm sets the border-radius to 5px.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>On hover the background color is updated using :hover pseudo class.</p>
@@ -554,6 +648,11 @@
                 <button class='btn-filled font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'>filled</button>
                 <button class='btn-filled font-size-md padding-lg text-uppercase text-bold letter-space-sm border-radius-sm'>filled</button>
                 <button class='btn-filled font-size-lg padding-xlg text-uppercase text-bold letter-space-md border-radius-sm margin-btm-sm'>filled</button>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                    &lt;button&gt; class='btn-filled font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'>filled&lt;/button&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>btn-filled sets the background and font color and sets the border-style to none.</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>On hover, the behaviour is same as text button, only the background color set is different.</p>
                 
@@ -561,6 +660,11 @@
                 <button class='btn-outlined text-uppercase text-bold font-size-sm padding-md letter-space-sm border-radius-sm'>outlined</button>
                 <button class='btn-outlined text-uppercase text-bold font-size-md padding-lg letter-space-sm border-radius-sm'>outlined</button>
                 <button class='btn-outlined text-uppercase text-bold font-size-lg padding-xlg letter-space-md border-radius-sm margin-btm-sm'>outlined</button>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;button&gt; class='btn-outlined text-uppercase text-bold font-size-sm padding-md letter-space-sm border-radius-sm'>outlined&lt;/button&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-lg'>btn-outlined sets a solid border with thin border-width and sets a transparent background.</p>
                 
                 <p class='font-size-md text-capital color-dgray margin-btm-sm'>buttons with icons</p>
@@ -578,12 +682,29 @@
                     </span>
                     delete
                 </button>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;button&gt; class='btn-filled flex-center text-uppercase text-bold padding-md font-size-sm letter-space-sm border-radius-sm margin-btm-sm'&gt;
+                &lt;span&gt; class='material-icons'&gt;
+                    delete
+                &lt;/span&gt;
+                    delete
+                &lt;/button&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-lg'>flex-center sets the contents of button at the center of major and cross axis.</p>
 
                 <p class='font-size-md text-capital color-dgray margin-btm-sm'>icon button</p>
                 <button class='btn-text padding-lg flex-center border-radius-circle'>
                     <span class='material-icons'>alarm</span>
                 </button>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;button&gt; class='btn-text padding-lg flex-center border-radius-circle'&gt;
+                &lt;span class='material-icons'&gt;alarm&lt;/span&gt;
+                &lt;/button&gt;
+                </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>border-radius-circle makes the border-radius of 50%.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>padding-lg sets the padding of 0.6rem.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>:hover is used to update the background color.</p>
@@ -598,6 +719,14 @@
                 
                 <p class='font-size-md text-capital color-dgray margin-btm-sm'>round image</p>
                 <img src='https://picsum.photos/500/500' alt='Random Image' class='img-sm border-radius-circle img-cover margin-btm-sm margin-left-md' />
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;img src='https://picsum.photos/500/500' alt='Random Image' class='img-lg img-cover margin-btm-md margin-left-md' /&gt;
+
+                &lt;img src='https://picsum.photos/500/500' alt='Random Image' class='img-sm border-radius-circle img-cover margin-btm-sm margin-left-md' /&gt;
+                </code>
+                </pre>
+
                 <p class='color-dgray margin-left-md margin-btm-sm'>img-lg gives the image a width and height of 25rem. So it is responsive by default as rem is updated in medai queries at 900px and 700px viewport width.</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>border-radius-circle sets the order-radius to 50%.Hence, round image.</p>
             </div>
@@ -610,6 +739,15 @@
                 <p class='font-size-md text-capital color-dgray margin-btm-sm'>error on submit</p>
                 <input id='input' type='text' class='input-md padding-xxlg border-thin input-border-btm margin-left-md' placeholder="Enter here..."/>
                 <button id='submit-btn' class='btn-filled padding-md margin-btm-lg'>submit</button>
+                
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html">
+                &lt;input id='input' type='text' class='input-md padding-xxlg border-thin input-border-btm margin-left-md' placeholder="Enter here..."/&gt;
+
+                &lt;button id='submit-btn' class='btn-filled padding-md margin-btm-lg'&gt;submit&lt;/button&gt;
+                </code>
+                 </pre>
+
                 <p class='color-dgray margin-left-md margin-btm-sm'>input-md sets the width of input element to 15rem.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>border-thin sets border-style to solid and border-width to thin.</p>
                 <p class='color-dgray margin-left-md margin-btm-lg'>input-border-btm removes all the border except border-bottom.</p>
@@ -626,5 +764,7 @@
     <footer class='footer-wrapper'></footer>  
     
 </body>
+<script src="/path/to/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 <script src='script.js'></script>
 </html>

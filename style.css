@@ -64,3 +64,10 @@ aside a {
     height: 100%;
     text-decoration: none;
 }
+
+pre {
+    width: 40rem;
+    overflow:auto;
+    background: var(--c-darkgray);
+    color: var(--c-white);
+}
