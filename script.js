@@ -5,11 +5,24 @@ const docBtnNav = document.querySelector('.doc-btn-nav')
 const setupDiv =  document.querySelector('.setup-div')
 const docDiv =  document.querySelector('.doc-div')
 const driftLogo = document.querySelector('#drift-logo') 
-
 const topScrollBtn =  document.querySelector('.float-btn') 
-
 const formSubmit = document.querySelector('#submit-btn')
 const formInput = document.querySelector('#input')
+const hideMenuBtn = document.querySelector('#hide-drawer')
+const showMenuBtn = document.querySelector('#show-drawer')
+const Menu = document.querySelector('#drawer')
+
+showMenuBtn.style.display = 'none'
+
+showMenuBtn.addEventListener('click', () => {
+    Menu.style.display = 'block'
+    showMenuBtn.style.display = 'none'
+})
+
+hideMenuBtn.addEventListener('click', () => {
+    Menu.style.display = 'none'
+    showMenuBtn.style.display = 'block'
+})
 
 topScrollBtn.addEventListener('click', () => {
     window.scrollTo(0,0)
