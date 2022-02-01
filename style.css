@@ -13,8 +13,8 @@ html {
 }
 
 .setup-link {
-    color: var(--c-yellow);
-    background: var(--c-darkgray);
+    color: var(--c-darkblue);
+    background: var(--c-lightgray);
 }
 
 .color-dgray {
@@ -30,6 +30,10 @@ html {
     border-bottom-style: solid;
     border-width: thin;
     border-color: var(--c-lightgray);
+}
+
+.logo:hover {
+    cursor: pointer;
 }
 
 .install-btn {
@@ -65,9 +69,6 @@ aside a {
     text-decoration: none;
 }
 
-pre {
+code {
     width: 40rem;
-    overflow:auto;
-    background: var(--c-darkgray);
-    color: var(--c-white);
 }

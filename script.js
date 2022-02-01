@@ -1,5 +1,6 @@
 const setupBtn = document.querySelector('.install-btn')
 const docBtn = document.querySelectorAll('.doc-btn')
+const logoBtn = document.querySelector('.logo') 
 const docBtnNav = document.querySelector('.doc-btn-nav')
 const setupDiv =  document.querySelector('.setup-div')
 const docDiv =  document.querySelector('.doc-div')
@@ -21,6 +22,13 @@ setupBtn.addEventListener('click', () => {
     docBtnNav.style.display = 'block'
 })
 
+logoBtn.addEventListener('click', () => {
+    setupDiv.style.display = 'flex'
+    docDiv.style.display = 'none'
+    setupBtn.style.display = 'none'
+    docBtnNav.style.display = 'block'
+})
+
 docBtn.forEach((btn => {
     btn.addEventListener('click', () => {
         setupDiv.style.display = 'none'
@@ -29,16 +37,6 @@ docBtn.forEach((btn => {
         setupBtn.style.display = 'block'
     })
 }))
-
-window.addEventListener('resize', () => {
-    if(window.innerWidth <= 900) {
-        setupDiv.classList.remove('flex-row')
-        setupDiv.classList.add('flex-column')
-    } else {
-        setupDiv.classList.remove('flex-column')
-        setupDiv.classList.add('flex-row')
-    }
-})
 
 formSubmit.addEventListener('click', () => {
     formInput.value= ''

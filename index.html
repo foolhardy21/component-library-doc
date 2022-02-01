@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+      rel="stylesheet" />
     <link rel='stylesheet' href='https://festive-mestorf-acecb0.netlify.app/style.css'/>
-    <link rel="stylesheet" href="/path/to/styles/default.min.css">
-    <link rel='stylesheet' href='./style.css'/>
-    <title>Documentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
+    <link rel='stylesheet' href='./style.css' />
+    <title>Space_UI</title>
 </head>
 <body>
     
     <header class='header-wrapper flex-horizontal-stretch flex-vertical-center letter-space-md padding-xxlg'>
-        <span class='font-size-xlg letter-space-lg'>Drift_UI</span>
+        <span class='font-size-xlg letter-space-lg logo'>Space_UI</span>
         <nav>
             <ul class='flex-horizontal-start font-size-md letters-space-sm'>
                 <li class='install-btn btn-filled padding-md border-radius-sm margin-right-xxlg text-capital'>setup</li>
@@ -23,16 +23,20 @@
         </nav>
     </header>
 
-    <div class='setup-div margin-top-md padding-xxlg flex-row flex-center'>
-        <div>
-            <p class='font-size-xlg text-bold letter-space-sm margin-btm-md text-uppercase'>Drift_UI</p>
-            <p class='color-gray font-size-md letter-space-md margin-btm-sm margin-left-md'>Drift_UI is flexible, quick and impactful with it's approach. Designing web pages using this library is as easy as drifting in space. Minimal effort.</p>
-            <p class='color-gray font-size-md letter-space-md margin-btm-lg margin-left-md'>Import <a class='setup-link padding-sm' href='https://festive-mestorf-acecb0.netlify.app/style.css' target="_blank">this</a> stylesheet in your html and you are good to go. Don't forget to import <a class='setup-link padding-sm' href='https://fonts.googleapis.com/icon?family=Material+Icons' target="_blank">Material Icons</a> too.</p>
-            <a class='font-size-md margin-left-md btn-outlined padding-xlg border-radius-sm text-capital' href='https://github.com/foolhardy21/component-library' target='_blank' >github</a>
-            <button class='margin-left-md font-size-md doc-btn btn-filled padding-xlg border-radius-sm text-capital'>docs</button>      
+    <div class='setup-div margin-top-md padding-xxlg flex-column flex-center'>
+        <img src='./space.svg' id='drift-logo' class='img-md' alt='speeding-car' />  
+        <div class=' flex-column flex-center'>
+            <!-- <p class='font-size-xlg text-bold letter-space-sm margin-btm-md text-uppercase'>Space_UI</p> -->
+            <p class='color-gray font-size-md letter-space-md margin-btm-sm '>Minimal</p>
+            <p class='color-gray font-size-md letter-space-md margin-btm-sm '>Clutter Free</p>
+            <p class='color-gray font-size-md letter-space-md margin-btm-sm '>Clean &</p>
+            <p class='color-gray font-size-md letter-space-md margin-btm-sm '>Vast.</p>
+            <p class='color-dgray text-bold font-size-lg letter-space-md margin-btm-xlg '>Just Like Space.</p>
+            <p class='color-dgray font-size-md letter-space-md margin-btm-lg '>Import <a class='setup-link padding-sm border-radius-sm' href='https://festive-mestorf-acecb0.netlify.app/style.css' target="_blank">this</a> stylesheet in your html along with <a class='setup-link padding-sm border-radius-sm' href='https://fonts.googleapis.com/icon?family=Material+Icons' target="_blank">Material Icons</a>. Read the documentation to know more.</p>
+            <button class='font-size-md doc-btn btn-filled padding-xlg border-radius-sm text-capital margin-btm-xlg'>docs</button>
+            <p class='color-dgray font-size-md margin-left-md letter-space-md '>Contribute to this project <a class='font-size-md setup-link padding-sm border-radius-sm' href='https://github.com/foolhardy21/component-library' target='_blank' >here</a>.</p>
         </div>
         
-        <img src='./car.svg' id='drift-logo' class='img-sm' alt='speeding-car' />  
     
     </div>
 
@@ -142,6 +146,45 @@
                         </div>
                     </footer>
                 </article>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                    <code class="language-html border-radius-sm">
+                        &lt;article class='card-wrapper card-shadow-sm pos-relative padding-bottom-sm border-radius-sm margin-btm-lg margin-left-md'&gt;
+                            &lt;span class="material-icons pos-absolute top-right-1 icon-close"&gt;
+                                close
+                                &lt;/span&gt;
+                            &lt;main class='border-top-radius-sm'&gt;
+                                &lt;img src='https://picsum.photos/400/300' class='card-image border-top-radius-sm' /&gt;
+                                &lt;header class='padding-xxlg'&gt;
+                                    &lt;p class='margin-0 font-size-md text-capital text-bold letter-space-md card-heading-black'&gt;our changing planet&lt;/p&gt;
+                                    &lt;p class='margin-0 margin-top-sm letter-space-sm font-capital card-subheading-black font-size-sm'&gt;by Kurt Wagner&lt;/p&gt;
+                                    &lt;/header&gt;
+                                &lt;pclass='card-text-fontstyle padding-xxlg margin-0 letter-space-md'&gt;Visit ten places on our planet that are undergoing the biggest changes today.
+                                    &lt;/p&gt;
+                                &lt;/main&gt;
+                            &lt;footer class='margin-0 margin-horizontal-xxlg flex-horizontal-stretch'&gt;
+                                    &lt;div&gt;
+                                        &lt;button class='font-size-sm letter-space-sm margin-right-md btn-text border-radius-sm text-uppercase padding-md'&gt;
+                                            read
+                                            &lt;/button&gt;
+                                        &lt;button class='font-size-sm letter-space-sm margin-right-md btn-text border-radius-sm text-uppercase padding-md'&gt;
+                                        bookmark
+                                        &lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;div class='flex-vertical-center'&gt;
+                                    &lt;span class="material-icons margin-right-xxlg card-icon"&gt;
+                                        favorite_border
+                                        &lt;/span&gt;
+                                    &lt;span class="material-icons margin-right-xxlg card-icon"&gt;
+                                        share
+                                        &lt;/span&gt;
+                                    &lt;span class="material-icons margin-right-xxlg card-icon"&gt;
+                                        more_vert
+                                        &gt;/span&gt;
+                                    &lt;/div&gt;
+                                &lt;/footer&gt;
+                            &lt;/article&gt;
+                    </code>
+                </pre>
                 <p class='color-dgray margin-left-md margin-btm-lg'>card-image sets the image to 100% width and sets object-fit to cover.</p>
 
                 <p class='font-size-md text-capital color-dgray margin-btm-sm margin-top-sm'>text overlay card</p>
@@ -323,8 +366,8 @@
                 <div class='badge-size-sm badge-yellow border-radius-circle margin-btm-sm'></div>
                 <div class='badge-size-sm badge-blue border-radius-circle margin-btm-sm'></div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                &lt;div&gt; class='badge-size-sm badge-green border-radius-circle margin-btm-sm'&gt;&lt;/div&gt;
+                <code class="language-html border-radius-sm">
+                &lt;div class='badge-size-sm badge-green border-radius-circle margin-btm-sm'&gt;&lt;/div&gt;
                 </code>
                 </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>badge-size-sm is for small notification badges. It gives width and height of 0.7rem to the div. For larger sizes, refer the examples shown below this.</p>
@@ -337,8 +380,8 @@
                 <div class='badge-size-md badge-yellow border-radius-circle margin-btm-sm'></div>
                 <div class='badge-size-md badge-blue border-radius-circle margin-btm-sm'></div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                &lt;div&gt; class='badge-size-md badge-green border-radius-circle margin-btm-sm'&gt;&lt;/div&gt;
+                <code class="language-html border-radius-sm">
+                &lt;div class='badge-size-md badge-green border-radius-circle margin-btm-sm'&gt;&lt;/div&gt;
                 </code>
                 </pre>
                 <p class='color-dgray margin-left-md margin-btm-lg'>Everything is same as above with the only difference being the class badge-size-md. It gives width and height of 1rem to the div.</p>
@@ -348,8 +391,8 @@
                     4
                 </div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                &lt;div&gt; class='badge-size-sm badge-text-sm flex-center padding-sm border-radius-circle badge-blue margin-btm-sm'&gt;
+                <code class="language-html border-radius-sm">
+                &lt;div class='badge-size-sm badge-text-sm flex-center padding-sm border-radius-circle badge-blue margin-btm-sm'&gt;
                     4
                 &lt;/div&gt;
                 </code>
@@ -368,10 +411,10 @@
                     <div class='badge-size-sm padding-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'>1</div>
                 </div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                &lt;div&gt; class='inline-block pos-relative margin-right-md'&gt;
-                &lt;span&gt; class='material-icons'>account_balance&lt;/span&gt;
-                &lt;div&gt; class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'&gt;1&lt;/div&gt;
+                <code class="language-html border-radius-sm">
+                &lt;div class='inline-block pos-relative margin-right-md'&gt;
+                    &lt;span class='material-icons'&gt;account_balance&lt;/span&gt;
+                    &lt;div class='badge-size-sm badge-text-sm flex-center border-radius-circle badge-blue pos-absolute top-left-60'&gt;1&lt;/div&gt;
                 &lt;/div&gt;
                 </code>
                 </pre>
@@ -408,7 +451,7 @@
                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-lg border-radius-circle'>
                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-xlg border-radius-circle'>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
+                <code class="language-html border-radius-sm">
                 &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' /&gt;
                 </code>
                 </pre>
@@ -423,10 +466,10 @@
                     <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' />    
                 </div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
+                <code class="language-html border-radius-sm">
                 &lt;div class='inline-block margin-top-md'&gt;
-                &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-border-blue border-thin border-radius-circle' /&gt;
-                &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' /&gt;
+                    &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-border-blue border-thin border-radius-circle' /&gt;
+                    &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm avatar-overlap avatar-border-blue border-thin border-radius-circle' /&gt;
                 &lt;/div&gt;    
                 </code>
                 </pre>
@@ -454,10 +497,10 @@
                     <div class='badge-blue border-radius-circle badge-size-md pos-absolute top-left-70'></div>
                 </div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                &lt;div&gt; class='inline-block pos-relative'&gt;
-                &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' /&gt;
-                &lt;div class='badge-red border-radius-circle badge-size-sm pos-absolute top-left-70'&gt;&lt;/div&gt;
+                <code class="language-html border-radius-sm">
+                &lt;div class='inline-block pos-relative'&gt;
+                    &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' /&gt;
+                    &lt;div class='badge-red border-radius-circle badge-size-sm pos-absolute top-left-70'&gt;&lt;/div&gt;
                 &lt;/div&gt;
                 </code>
                 </pre>
@@ -502,15 +545,15 @@
                     <span class='material-icons icon-close'>close</span>
                 </div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
+                <code class="language-html border-radius-sm">
                 &lt;div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-basic border-radius-sm margin-btm-lg'&gt;
-                &lt;div class='flex-vertical-center'&gt;
-                &lt;span class="material-icons icon-color-green"&gt;
-                    check_circle
-                &lt;/span&gt;
-                    This is a success alert — check it out!
-                &lt;/div&gt;
-                &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
+                    &lt;div class='flex-vertical-center'&gt;
+                        &lt;span class="material-icons icon-color-green"&gt;
+                            check_circle
+                        &lt;/span&gt;
+                        This is a success alert — check it out!
+                    &lt;/div&gt;
+                    &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
                 &lt;/div&gt;
                 </code>
                 </pre>
@@ -556,15 +599,15 @@
                     <span class='material-icons icon-close'>close</span>
                 </div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
+                <code class="language-html border-radius-sm">
                 &lt;div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md container-outlined alert-success-outlined border-radius-sm margin-btm-lg'&gt;
-                &lt;div class='flex-vertical-center'&gt;
-                &lt;span class="material-icons icon-color-green"&gt;
-                    check_circle
-                &lt;/span&gt;
-                    This is a success alert — check it out!
-                &lt;/div&gt;
-                &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
+                    &lt;div class='flex-vertical-center'&gt;
+                        &lt;span class="material-icons icon-color-green"&gt;
+                            check_circle
+                        &lt;/span&gt;
+                        This is a success alert — check it out!
+                    &lt;/div&gt;
+                    &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
                 &lt;/div&gt;
                 </code>
                 </pre>
@@ -604,15 +647,15 @@
                     <span class='material-icons icon-close'>close</span>
                 </div>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
+                <code class="language-html border-radius-sm">
                 &lt;div class='flex-horizontal-stretch padding-md font-size-sm letter-space-sm alert-size-md alert-success-filled border-radius-sm margin-btm-lg'&gt;
-                &lt;div class='flex-vertical-center'&gt;
-                &lt;span class="material-icons icon-color-green"&gt;
-                    check_circle
-                &lt;/span&gt;
-                    This is a success alert — check it out!
-                &lt;/div&gt;
-                &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
+                    &lt;div class='flex-vertical-center'&gt;
+                        &lt;span class="material-icons icon-color-green"&gt;
+                            check_circle
+                        &lt;/span&gt;
+                        This is a success alert — check it out!
+                    &lt;/div&gt;
+                    &lt;span class='material-icons icon-close'&gt;close&lt;/span&lt;
                 &lt;/div&gt;
                 </code>
                 </pre>
@@ -633,7 +676,7 @@
                     text
                 </button>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
+                <code class="language-html border-radius-sm">
                 &lt;button class='btn-text font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'&gt;
                     text
                 &lt;/button&gt;
@@ -649,8 +692,10 @@
                 <button class='btn-filled font-size-md padding-lg text-uppercase text-bold letter-space-sm border-radius-sm'>filled</button>
                 <button class='btn-filled font-size-lg padding-xlg text-uppercase text-bold letter-space-md border-radius-sm margin-btm-sm'>filled</button>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                    &lt;button&gt; class='btn-filled font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'>filled&lt;/button&gt;
+                <code class="language-html border-radius-sm">
+                    &lt;button class='btn-filled font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'&gt;
+                        filled
+                    &lt;/button&gt;
                 </code>
                 </pre>
                 <p class='color-dgray margin-left-md margin-btm-sm'>btn-filled sets the background and font color and sets the border-style to none.</p>
@@ -661,8 +706,10 @@
                 <button class='btn-outlined text-uppercase text-bold font-size-md padding-lg letter-space-sm border-radius-sm'>outlined</button>
                 <button class='btn-outlined text-uppercase text-bold font-size-lg padding-xlg letter-space-md border-radius-sm margin-btm-sm'>outlined</button>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                &lt;button&gt; class='btn-outlined text-uppercase text-bold font-size-sm padding-md letter-space-sm border-radius-sm'>outlined&lt;/button&gt;
+                <code class="language-html border-radius-sm">
+                &lt;button class='btn-outlined text-uppercase text-bold font-size-sm padding-md letter-space-sm border-radius-sm'&gt;
+                    outlined
+                &lt;/button&gt;
                 </code>
                 </pre>
                 <p class='color-dgray margin-left-md margin-btm-lg'>btn-outlined sets a solid border with thin border-width and sets a transparent background.</p>
@@ -683,11 +730,11 @@
                     delete
                 </button>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                &lt;button&gt; class='btn-filled flex-center text-uppercase text-bold padding-md font-size-sm letter-space-sm border-radius-sm margin-btm-sm'&gt;
-                &lt;span&gt; class='material-icons'&gt;
-                    delete
-                &lt;/span&gt;
+                <code class="language-html border-radius-sm">
+                &lt;button class='btn-filled flex-center text-uppercase text-bold padding-md font-size-sm letter-space-sm border-radius-sm margin-btm-sm'&gt;
+                    &lt;span class='material-icons'&gt;
+                        delete
+                    &lt;/span&gt;
                     delete
                 &lt;/button&gt;
                 </code>
@@ -699,9 +746,9 @@
                     <span class='material-icons'>alarm</span>
                 </button>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
-                &lt;button&gt; class='btn-text padding-lg flex-center border-radius-circle'&gt;
-                &lt;span class='material-icons'&gt;alarm&lt;/span&gt;
+                <code class="language-html border-radius-sm">
+                &lt;button class='btn-text padding-lg flex-center border-radius-circle'&gt;
+                    &lt;span class='material-icons'&gt;alarm&lt;/span&gt;
                 &lt;/button&gt;
                 </code>
                 </pre>
@@ -720,7 +767,7 @@
                 <p class='font-size-md text-capital color-dgray margin-btm-sm'>round image</p>
                 <img src='https://picsum.photos/500/500' alt='Random Image' class='img-sm border-radius-circle img-cover margin-btm-sm margin-left-md' />
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
+                <code class="language-html border-radius-sm">
                 &lt;img src='https://picsum.photos/500/500' alt='Random Image' class='img-lg img-cover margin-btm-md margin-left-md' /&gt;
 
                 &lt;img src='https://picsum.photos/500/500' alt='Random Image' class='img-sm border-radius-circle img-cover margin-btm-sm margin-left-md' /&gt;
@@ -739,14 +786,12 @@
                 <p class='font-size-md text-capital color-dgray margin-btm-sm'>error on submit</p>
                 <input id='input' type='text' class='input-md padding-xxlg border-thin input-border-btm margin-left-md' placeholder="Enter here..."/>
                 <button id='submit-btn' class='btn-filled padding-md margin-btm-lg'>submit</button>
-                
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                <code class="language-html">
+                <code class="language-html border-radius-sm">
                 &lt;input id='input' type='text' class='input-md padding-xxlg border-thin input-border-btm margin-left-md' placeholder="Enter here..."/&gt;
-
                 &lt;button id='submit-btn' class='btn-filled padding-md margin-btm-lg'&gt;submit&lt;/button&gt;
                 </code>
-                 </pre>
+                </pre>
 
                 <p class='color-dgray margin-left-md margin-btm-sm'>input-md sets the width of input element to 15rem.</p>
                 <p class='color-dgray margin-left-md margin-btm-sm'>border-thin sets border-style to solid and border-width to thin.</p>
@@ -763,8 +808,8 @@
     
     <footer class='footer-wrapper'></footer>  
     
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
-<script src="/path/to/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
 <script src='script.js'></script>
 </html>
