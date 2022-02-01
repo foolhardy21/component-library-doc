@@ -14,7 +14,7 @@
 <body>
     
     <header class='header-wrapper flex-horizontal-stretch flex-vertical-center letter-space-md padding-xxlg'>
-        <span class='font-size-xlg letter-space-lg logo'>Space_UI</span>
+        <span class='font-size-xlg letter-space-lg logo'>Space_UI</span>    
         <nav>
             <ul class='flex-horizontal-start font-size-md letters-space-sm'>
                 <li class='install-btn btn-filled padding-md border-radius-sm margin-right-xxlg text-capital'>setup</li>
@@ -40,9 +40,18 @@
     </section>
 
     <div class='doc-div flex-row'>
-
-        <aside class='margin-right-md text-capital'>
+        <span id='show-drawer' class="material-icons pos-sticky top-0 padding-sm border-radius-circle btn-text margin-left-md margin-top-sm">
+            arrow_forward
+        </span>
+        <aside id='drawer' class='margin-right-md text-capital'>
             <ul class='pos-sticky top-0'>
+                <li class='margin-btm-sm'>
+                    <a id='hide-drawer' class='flex-center btn-filled'>
+                        <span class="material-icons">
+                            arrow_back
+                        </span>
+                    </a>
+                </li>
                 <li class='margin-btm-sm'>
                     <a href='#cards' class='flex-center btn-text'>card</a>
                 </li>
@@ -67,7 +76,7 @@
             </ul>
         </aside>
       
-        <main class='overflow-x'>
+        <main class='overflow-x margin-left-md'>
             
             <div id='cards'>
                 <p class='font-size-lg margin-btm-md text-uppercase'>Cards</p>
