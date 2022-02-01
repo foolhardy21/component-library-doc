@@ -45,7 +45,9 @@ html {
 }
 
 .setup-div {
-    display: flex;
+    background: var(--c-lightblue);
+    width: 70%;
+    border-radius: 10px;
 }
 
 .doc-div {
