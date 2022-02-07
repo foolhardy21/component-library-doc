@@ -13,16 +13,7 @@ html {
 }
 
 .setup-link {
-    color: var(--c-darkblue);
     background: var(--c-lightgray);
-}
-
-.color-dgray {
-    color: var(--c-darkgray);
-}
-
-.color-gray {
-    color: var(--c-gray);
 }
 
 .header-wrapper {
@@ -70,11 +61,23 @@ aside > ul >li{
 }
 
 aside a {
-    width: 10rem;
+    width: 13rem;
     height: 100%;
     text-decoration: none;
 }
 
 code {
     width: 40rem;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    code {
+        width: 30rem;
+    }
+
 }
