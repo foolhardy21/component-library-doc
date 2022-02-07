@@ -54,8 +54,11 @@ aside {
     border-width: thin;
     border-color: var(--c-lightgray);
 }
-
-aside > ul >li{
+aside > ul {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+aside > ul > li{
     height: 3rem;
     list-style: none;
 }
