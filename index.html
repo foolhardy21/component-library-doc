@@ -50,29 +50,39 @@
                         </span>
                     </a>
                 </li>
-                <li class='margin-btm-sm'>
+                <li>
                     <a href='#cards' class='flex-center btn-text text-blue'>card</a>
                 </li>
-                <li class='margin-btm-sm'>
+                <li>
                     <a href='#badges' class='flex-center btn-text text-blue'>badge</a>
                 </li>
-                <li class='margin-btm-sm'>
+                <li>
                     <a href='#avatars' class='flex-center btn-text text-blue'>avatar</a>
                 </li>
-                <li class='margin-btm-sm'>
+                <li>
                     <a href='#alerts' class='flex-center btn-text text-blue'>alert</a>
                 </li>
-                <li class='margin-btm-sm'>
+                <li>
                     <a href='#buttons' class='flex-center btn-text text-blue'>button</a>
                 </li>
-                <li class='margin-btm-sm'>
+                <li>
                     <a href='#images' class='flex-center btn-text text-blue'>image</a>
                 </li>
-                <li class='margin-btm-sm'>
+                <li>
                     <a href='#inputs' class='flex-center btn-text text-blue'>input</a>
                 </li>
-                <li class='margin-btm-sm'>
+                <li>
                     <a href='#textutils' class='flex-center btn-text text-blue'>text utils</a>
+                </li>
+                <li>
+                    <a href='#toast' class='flex-center btn-text text-blue'>
+                        toast
+                    </a>
+                </li>
+                <li>
+                    <a href='#grids' class='flex-center btn-text text-blue'>
+                        grids
+                    </a>
                 </li>
             </ul>
         </aside>
@@ -85,7 +95,7 @@
                 </span>
             </button>
             
-            <div id='cards'>
+            <div id='cards' class='margin-top-xlg'>
                 <p class='font-size-lg margin-btm-md text-uppercase'>Cards</p>
                 <p class='font-size-md text-capital text-dgray margin-btm-sm'>text only card</p>
                 <article class='card-wrapper card-shadow-sm pos-relative padding-bottom-sm border-radius-sm margin-btm-lg margin-left-md'>
@@ -419,10 +429,10 @@
                         </div>
                     </footer>
                 </article>
-                <p class='text-dgray margin-left-md margin-btm-lg'>card-horizontal-end applies flex-end on the footer element to keep the icons at the end on the major axis.</p>
+                <p class='text-dgray margin-left-md'>card-horizontal-end applies flex-end on the footer element to keep the icons at the end on the major axis.</p>
             </div>
           
-            <div id='badges'>
+            <div id='badges' class='margin-top-xlg'>
                 <p class='font-size-lg margin-btm-md text-uppercase'>badges</p>
                 <p class='font-size-md text-capital text-dgray margin-btm-sm'>small notification badges</p>
                 <div class='badge-size-sm badge-green border-radius-circle margin-btm-sm'></div>
@@ -513,7 +523,7 @@
                 </div>
             </div>
 
-            <div id='avatars'>
+            <div id='avatars' class='margin-top-xlg'>
                 <p class='font-size-lg text-uppercase margin-top-md margin-btm-md'>Avatars</p>
                 <p class='font-size-md text-capital text-dgray' >different sizes</p>
                 <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
@@ -575,11 +585,11 @@
                 </code>
                 </pre>
                 <p class='text-dgray margin-top-sm margin-left-md margin-btm-sm'>pos-relative is applied on parent wrapper.</p>
-                <p class='text-dgray margin-top-sm margin-left-md margin-btm-lg'>pos-absolute is applied on icon. top-left-70 sets the icon's top and left to 70%.</p>
+                <p class='text-dgray margin-top-sm margin-left-md'>pos-absolute is applied on icon. top-left-70 sets the icon's top and left to 70%.</p>
 
             </div>
 
-            <div id='alerts'>
+            <div id='alerts' class='margin-top-xlg'>
 
                 <p class='font-size-lg margin-btm-md text-uppercase'>Alerts</p>
                 <p class='font-size-md text-capital text-dgray margin-btm-sm'>basic error</p>
@@ -729,11 +739,11 @@
                 &lt;/div&gt;
                 </code>
                 </pre>
-                <p class='text-dgray margin-left-md margin-btm-xlg'>container-success-filled sets the respective font and background colors.</p>
+                <p class='text-dgray margin-left-md'>container-success-filled sets the respective font and background colors.</p>
 
             </div>
 
-            <div id='buttons'>
+            <div id='buttons' class='margin-top-xlg'>
                 <p class='font-size-lg margin-btm-md text-uppercase'>Buttons</p>
                 <p class='font-size-md text-capital text-dgray margin-btm-sm'>text buttons</p>
                 <button class='btn-text text-blue container-transparent no-border font-size-sm padding-md text-uppercase text-bold letter-space-sm border-radius-sm'>
@@ -825,10 +835,10 @@
                 <p class='text-dgray margin-left-md margin-btm-sm'>border-radius-circle makes the border-radius of 50%.</p>
                 <p class='text-dgray margin-left-md margin-btm-sm'>padding-lg sets the padding of 0.6rem.</p>
                 <p class='text-dgray margin-left-md margin-btm-sm'>:hover is used to update the background color.</p>
-                <p class='text-dgray margin-left-md margin-btm-lg'>functioning float action button is in the bottom right corner.</p>
+                <p class='text-dgray margin-left-md'>functioning float action button is in the bottom right corner.</p>
             </div>
 
-            <div id='images'>
+            <div id='images' class='margin-top-xlg'>
                 <p class='font-size-lg margin-btm-md text-uppercase'>Images</p>
 
                 <p class='font-size-md text-capital text-dgray margin-btm-sm'>density switching</p>
@@ -846,17 +856,16 @@
                 &lt;img srcset='https://picsum.photos/id/200/700/700 900w,
                 https://picsum.photos/id/200/300/300 300w' sizes="(min-width: 900px) 900px,
                 300px" alt='Hairy cow' class='img-cover' /&gt;
-
                 &lt;img src='https://picsum.photos/500/500' alt='Random Image' class='img-sm border-radius-circle img-cover margin-btm-sm margin-left-md' /&gt;
                 </code>
                 </pre>
 
                 <p class='text-dgray margin-left-md margin-btm-sm'>img-lg gives the image a width and height of 25rem. So it is responsive by default as rem is updated in medai queries at 900px and 700px viewport width.</p>
-                <p class='text-dgray margin-left-md margin-btm-lg'>border-radius-circle sets the order-radius to 50%.Hence, round image.</p>
+                <p class='text-dgray margin-left-md'>border-radius-circle sets the order-radius to 50%.Hence, round image.</p>
             </div>
 
-            <div id='inputs'>
-                <p class='font-size-lg margin-btm-md margin-top-md text-uppercase'>Inputs</p>
+            <div id='inputs' class='margin-top-xlg'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>Inputs</p>
                 <p class='font-size-md text-capital text-dgray margin-btm-sm'>normal input</p>
                 <input type='text' class='input-md padding-xxlg no-border border-btm-thin no-outline margin-btm-md margin-left-md' placeholder="Enter here..." />
                 
@@ -872,11 +881,11 @@
 
                 <p class='text-dgray margin-left-md margin-btm-sm'>input-md sets the width of input element to 15rem.</p>
                 <p class='text-dgray margin-left-md margin-btm-sm'>border-thin sets border-style to solid and border-width to thin.</p>
-                <p class='text-dgray margin-left-md margin-btm-lg'>input-border-btm removes all the border except border-bottom.</p>
+                <p class='text-dgray margin-left-md'>input-border-btm removes all the border except border-bottom.</p>
             </div>
 
             <div id='textutils' class='margin-top-xlg'>
-                <p class='font-size-lg margin-btm-md margin-top-md text-uppercase'>Text Utilities</p>
+                <p class='font-size-lg margin-btm-md text-uppercase'>Text Utilities</p>
                 <p class='font-size-md text-capital text-dgray margin-btm-sm'>headings</p>
                 <p class='font-size-xlg text-bold letter-space-md margin-left-md'>Text</p>
                 <p class='margin-left-md font-size-lg text-bold letter-space-md'>Text</p>
@@ -885,22 +894,77 @@
                 </p>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
                 <code class="language-html border-radius-sm">
-                    &lt;p class='font-size-xlg text-bold letter-space-md margin-left-md'&gt;Text&lt;/p&gt;
-                    &lt;p class='margin-left-md font-size-lg text-bold letter-space-md'&gt;Text&lt;/p&gt;
-                    &lt;p class='font-size-lg margin-left-md text-bold text-dgray letter-space-md'&gt;Text&lt;/p&gt;
+                &lt;p class='font-size-xlg text-bold letter-space-md margin-left-md'&gt;Text&lt;/p&gt;
+                &lt;p class='margin-left-md font-size-lg text-bold letter-space-md'&gt;Text&lt;/p&gt;
+                &lt;p class='font-size-lg margin-left-md text-bold text-dgray letter-space-md'&gt;Text&lt;/p&gt;
                 </code>
                 </pre>
-                <p class='font-size-md text-capital margin-top-lg text-dgray margin-btm-sm'>small text</p>
+                <p class='font-size-md text-capital text-dgray margin-btm-sm'>small text</p>
                 <p class='font-size-md text-dgray letter-space-md margin-left-md'>Text</p>
                 <p class='margin-left-md font-size-sm text-dgray letter-space-md'>Text</p>
                 <pre class='border-radius-sm letter-space-md margin-btm-md'>
-                    <code class="language-html border-radius-sm">
-                        &lt;p class='font-size-md text-dgray letter-space-md margin-left-md'&gt;Text&lt;/p&gt;
-                        &lt;p class='margin-left-md font-size-sm text-dgray letter-space-md'&gt;Text&lt;/p&gt;
-                    </code>
-                    </pre>
+                <code class="language-html border-radius-sm">
+                &lt;p class='font-size-md text-dgray letter-space-md margin-left-md'&gt;Text&lt;/p&gt;
+                &lt;p class='margin-left-md font-size-sm text-dgray letter-space-md'&gt;Text&lt;/p&gt;
+                </code>
+                </pre>
             </div>
-      
+
+            <div id='toast' class='margin-top-xlg'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>Toast/Snackbar</p>
+                <div class='toast padding-lg font-size-sm text-white letter-space-md border-radius-md flex-horizontal-stretch flex-vertical-center'>
+                    <div class='flex-vertical-center'>
+                        Cannot send the photo. Check the internet connection.
+                        <button class='padding-lg text-uppercase btn-filled border-radius-sm no-border text-white'>retry</button>
+                    </div>
+                    <span class='icon-close material-icons'>close</span>
+                </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html border-radius-sm">
+                &lt;div class='toast pos-fixed toast-position padding-lg font-size-sm text-white letter-space-md border-radius-md flex-horizontal-stretch flex-vertical-center'&gt;
+                    &lt;div class='flex-vertical-center'&gt;
+                        Cannot send the photo. Check the internet connection.
+                        &lt;button class='padding-lg text-uppercase btn-filled border-radius-sm no-border text-white'&gt;retry&lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;span class='icon-close material-icons'&gt;
+                        close
+                    &lt;/span&gt;
+                &lt;/div&gt;
+                </code>
+                </pre>
+            </div>
+
+            <div id='grids' class='margin-btm-md margin-top-xlg'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>
+                    Grids
+                </p>
+                <p class='font-size-md text-capital text-dgray margin-btm-sm'>
+                    structure changes at 900px viewport width
+                </p>
+                <section class='grid grid-maxcols-2 margin-btm-md'>
+                    <div class='grid-item1'>item 1</div>
+                    <div class='grid-item2'>item 2</div>
+                </section>
+                <section class='grid grid-maxcols-3'>
+                    <div class='grid-item1'>item 1</div>
+                    <div class='grid-item2'>item 2</div>
+                    <div class='grid-item3'>item 3</div>
+                </section>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html border-radius-sm">
+                &lt;section class='grid grid-maxcols-2 margin-btm-md'&gt;
+                    &lt;div class='grid-item1'&gt;item 1&lt;/div&gt;
+                    &lt;div class='grid-item2'&gt;item 2&lt;/div&gt;
+                &lt;/section&gt;
+                &lt;section class='grid grid-maxcols-3'&gt;
+                    &lt;div class='grid-item1'&gt;item 1&lt;/div&gt;
+                    &lt;div class='grid-item2'&gt;item 2&lt;/div&gt;
+                    &lt;div class='grid-item3'&gt;item 3&lt;/div&gt;
+                &lt;/section&gt;
+                </code>
+                </pre>
+            </div>
+
         </main>
   
         <button class='float-btn btn-text text-blue no-border container-transparent padding-lg flex-center pos-fixed bottom-right-5 border-radius-circle'>
