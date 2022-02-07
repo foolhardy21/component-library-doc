@@ -11,8 +11,22 @@ const formInput = document.querySelector('#input')
 const hideMenuBtn = document.querySelector('#hide-drawer')
 const showMenuBtn = document.querySelector('#show-drawer')
 const Menu = document.querySelector('#drawer')
+const starIcons = document.querySelectorAll('#star-icon')
 
 showMenuBtn.style.display = 'none'
+
+starIcons.forEach(starIcon => {
+    starIcon.addEventListener('click', (e) => {
+        const maxRating = e.target.dataset.value
+        starIcons.forEach(star => {
+            if(star.dataset.value <= maxRating) {
+                star.style.color = 'var(--c-yellow)' 
+            } else {
+                star.style.color = 'var(--c-gray)' 
+            }
+        })
+    })
+})
 
 showMenuBtn.addEventListener('click', () => {
     Menu.style.display = 'block'
