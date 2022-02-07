@@ -1083,15 +1083,188 @@
                         &lt;/div&gt;
                     &lt;/nav&gt;
                     </code>
+                </pre>
+            </div>
+
+            <div id='modal' class='margin-top-xxlg'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>Modal</p>
+                <button class='open-modal btn-text c-blue padding-md container-transparent no-border'>open modal</button>
+                <section class='flex-center modal-container no-display'>
+                    <article class='modal padding-xxlg border-radius-sm'>
+                        <h3 class='margin-0 text-bold font-size-md letter-space-md c-black text-capital'>dialog header</h3>
+                        <p class='margin-0 font-size-sm letter-space-sm c-gray text-capital margin-top-sm margin-left-sm'>dialog body text</p>
+                        <footer class='flex-horizontal-end'>
+                            <button class='btn-filled no-border c-white padding-lg text-capital margin-right-md dialog-action-btn border-radius-sm'>action 1</button>
+                            <button class='btn-text c-blue no-border container-transparent padding-lg text-capital dialog-action-btn border-radius-sm'>action 2</button>
+                        </footer>
+                    </article>
+                </section>
+
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html border-radius-sm">
+                &lt;section class='flex-center modal-container no-display'&gt;
+                    &lt;article class='modal padding-xxlg border-radius-sm'&gt;
+                        &lt;h3 class='margin-0 text-bold font-size-md letter-space-md c-black text-capital'&gt;
+                            dialog header
+                        &lt;/h3&gt;
+                        &lt;p class='margin-0 font-size-sm letter-space-sm c-gray text-capital margin-top-sm margin-left-sm'&gt;
+                            dialog body text
+                        &lt;/p&gt;
+                        &lt;footer class='flex-horizontal-end'&gt;
+                            &lt;button class='btn-filled no-border c-white padding-lg text-capital margin-right-md dialog-action-btn border-radius-sm'&gt;
+                                action 1
+                            &lt;/button&gt;
+                            &lt;button class='btn-text c-blue no-border container-transparent padding-lg text-capital dialog-action-btn border-radius-sm'&gt;
+                                action 2
+                            &lt;/button&gt;
+                        &lt;/footer&gt;
+                    &lt;/article&gt;
+                &lt;/section&gt;
+                </code>
+                </pre>
+            </div>
+
+            <div id='lists' class='margin-btm-md margin-top-xxlg'>
+                <p class='font-size-lg margin-btm-md text-uppercase'>lists</p>
+                <p class='font-size-md text-capital c-dgray margin-btm-sm'>simple list</p>
+                <div class='list border-radius-sm card-shadow-sm'>        
+                    <ul class='c-darkgray'>
+                        <li class='list-menu-item flex-horizontal-start flex-vertical-center border-radius-sm padding-lg list-menu-item-active'>
+                            <span class="material-icons">
+                                inbox
+                            </span>
+                            <p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'>
+                                inbox
+                            </p>
+                        </li>
+                        <li class='list-menu-item flex-horizontal-start flex-vertical-center border-radius-sm padding-lg'>
+                            <span class="material-icons">
+                                star
+                            </span>
+                            <p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'>
+                                star
+                            </p>
+                        </li>
+                        <li class='list-menu-item flex-horizontal-start flex-vertical-center border-radius-sm padding-lg'>
+                            <span class="material-icons">
+                                send
+                            </span>
+                            <p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'>
+                                sent_mail
+                            </p>
+                        </li>
+                        <li class='list-menu-item flex-horizontal-start flex-vertical-center border-radius-sm padding-lg'>
+                            <span class="material-icons">
+                                drafts
+                            </span>
+                            <p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'>
+                                drafts
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                <code class="language-html border-radius-sm">
+                &lt;div class='list border-radius-sm card-shadow-sm'&gt;        
+                    &lt;ul class='c-darkgray'&gt;
+                        &lt;li class='list-menu-item flex-horizontal-start flex-vertical-center border-radius-sm padding-lg list-menu-item-active'&gt;
+                            &lt;span class="material-icons"&gt;
+                                inbox
+                            &lt;/span&gt;
+                            &lt;p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'&gt;
+                                inbox
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                </code>
+                </pre>
+
+                <p class='font-size-md text-capital c-dgray margin-btm-sm'>stacked list for notifications</p>
+                <div class='stacked-list border-radius-sm card-shadow-sm'>
+                    <ul class='c-darkgray'>
+                        <li class='list-menu-item border-radius-sm padding-lg flex-horizontal-stretch flex-vertical-center list-menu-item-active'>
+                            <div class='flex-center'>
+                                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                                <div class='flex-column'>
+                                    <p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'>
+                                        Lioness
+                                    </p>
+                                    <p class='margin-0 margin-left-md text-capital font-size-sm letter-space-md text-dgray'>hey! pick up the phone</p>
+                                </div>
+                            </div>
+                            <span class='material-icons icon-close text-dgray'>
+                                close
+                            </span>
+                        </li>
+                        <li class='list-menu-item border-radius-sm padding-lg flex-horizontal-stretch flex-vertical-center'>
+                            <div class='flex-center'>
+                                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                                <div class='flex-column'>
+                                    <p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'>
+                                        Lioness
+                                    </p>
+                                    <p class='margin-0 margin-left-md text-capital font-size-sm letter-space-md text-dgray'>hey! pick up the phone</p>
+                                </div>
+                            </div>
+                            <span class='material-icons icon-close text-dgray'>
+                                close
+                            </span>
+                        </li>
+                        <li class='list-menu-item border-radius-sm padding-lg flex-horizontal-stretch flex-vertical-center'>
+                            <div class='flex-center'>
+                                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                                <div class='flex-column'>
+                                    <p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'>
+                                        Lioness
+                                    </p>
+                                    <p class='margin-0 margin-left-md text-capital font-size-sm letter-space-md text-dgray'>hey! pick up the phone</p>
+                                </div>
+                            </div>
+                            <span class='material-icons icon-close text-dgray'>
+                                close
+                            </span>
+                        </li>
+                        <li class='list-menu-item border-radius-sm padding-lg flex-horizontal-stretch flex-vertical-center'>
+                            <div class='flex-center'>
+                                <img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' />
+                                <div class='flex-column'>
+                                    <p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'>
+                                        Lioness
+                                    </p>
+                                    <p class='margin-0 margin-left-md text-capital font-size-sm letter-space-md text-dgray'>hey! pick up the phone</p>
+                                </div>
+                            </div>
+                            <span class='material-icons icon-close text-dgray'>
+                                close
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <pre class='border-radius-sm letter-space-md margin-btm-md'>
+                    <code class="language-html border-radius-sm">
+                    &lt;div class='stacked-list border-radius-sm card-shadow-sm'&gt;        
+                        &lt;ul class='c-darkgray'&gt;
+                            &lt;li class='list-menu-item border-radius-sm padding-lg flex-horizontal-stretch flex-vertical-center list-menu-item-active'&gt;
+                                &lt;div class='flex-center'&gt;
+                                    &lt;img src='https://picsum.photos/id/1074/500/500' class='avatar avatar-size-sm border-radius-circle' /&gt;
+                                    &lt;div class='flex-column'&gt;
+                                        &lt;p class='margin-0 margin-left-md text-capital font-size-md letter-space-md'&gt;
+                                            Lioness
+                                        &lt;/p&gt;
+                                        &lt;p class='margin-0 margin-left-md text-capital font-size-sm letter-space-md text-dgray'&gt;
+                                            hey! pick up the phone
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;span class='material-icons icon-close text-dgray'&gt;
+                                    close
+                                &lt;/span&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    </code>
                     </pre>
-            </div>
-
-            <div id='#modal'>
-
-            </div>
-
-            <div id='#list'>
-
             </div>
 
         </main>

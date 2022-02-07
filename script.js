@@ -4,16 +4,40 @@ const logoBtn = document.querySelector('.logo')
 const docBtnNav = document.querySelector('.doc-btn-nav')
 const setupDiv =  document.querySelector('.setup-div')
 const docDiv =  document.querySelector('.doc-div')
-const driftLogo = document.querySelector('#drift-logo') 
+
 const topScrollBtn =  document.querySelector('.float-btn') 
+
 const formSubmit = document.querySelector('#submit-btn')
 const formInput = document.querySelector('#input')
+
 const hideMenuBtn = document.querySelector('#hide-drawer')
 const showMenuBtn = document.querySelector('#show-drawer')
 const Menu = document.querySelector('#drawer')
+
 const starIcons = document.querySelectorAll('#star-icon')
 
+const openDialogBtn = document.querySelector('.open-modal')
+const modalDiv = document.querySelector('.modal')
+const modalContainer = document.querySelector('.modal-container')
+const dialogActionBtn = document.querySelectorAll('.dialog-action-btn')
+
 showMenuBtn.style.display = 'none'
+
+openDialogBtn.addEventListener('click', () => {
+    modalContainer.classList.remove('no-display')
+    modalContainer.classList.add('pos-fixed')
+    modalContainer.classList.add('top-left-0')
+    modalContainer.classList.add('z-1')
+})
+
+dialogActionBtn.forEach(actionBtn => {
+    actionBtn.addEventListener('click', () => {
+        modalContainer.classList.add('no-display')
+        modalContainer.classList.remove('pos-fixed')
+        modalContainer.classList.remove('top-left-0')
+        modalContainer.classList.remove('z-1')
+    })
+})
 
 starIcons.forEach(starIcon => {
     starIcon.addEventListener('click', (e) => {
