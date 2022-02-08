@@ -4,24 +4,65 @@ const logoBtn = document.querySelector('.logo')
 const docBtnNav = document.querySelector('.doc-btn-nav')
 const setupDiv =  document.querySelector('.setup-div')
 const docDiv =  document.querySelector('.doc-div')
-const driftLogo = document.querySelector('#drift-logo') 
 const topScrollBtn =  document.querySelector('.float-btn') 
 const formSubmit = document.querySelector('#submit-btn')
 const formInput = document.querySelector('#input')
 const hideMenuBtn = document.querySelector('#hide-drawer')
 const showMenuBtn = document.querySelector('#show-drawer')
 const Menu = document.querySelector('#drawer')
+const documentMainDiv = document.querySelector('#documentMain')
+const starIcons = document.querySelectorAll('#star-icon')
+const openDialogBtn = document.querySelector('.open-modal')
+const modalDiv = document.querySelector('.modal')
+const modalContainer = document.querySelector('.modal-container')
+const dialogActionBtn = document.querySelectorAll('.dialog-action-btn')
+
 
 showMenuBtn.style.display = 'none'
+
+openDialogBtn.addEventListener('click', () => {
+    modalContainer.classList.remove('no-display')
+    modalContainer.classList.add('pos-fixed')
+    modalContainer.classList.add('top-left-0')
+    modalContainer.classList.add('z-1')
+})
+
+dialogActionBtn.forEach(actionBtn => {
+    actionBtn.addEventListener('click', () => {
+        modalContainer.classList.add('no-display')
+        modalContainer.classList.remove('pos-fixed')
+        modalContainer.classList.remove('top-left-0')
+        modalContainer.classList.remove('z-1')
+    })
+})
+
+starIcons.forEach(starIcon => {
+    starIcon.addEventListener('click', (e) => {
+        const maxRating = e.target.dataset.value
+        starIcons.forEach(star => {
+            if(star.dataset.value <= maxRating) {
+                star.style.color = 'var(--c-yellow)' 
+            } else {
+                star.style.color = 'var(--c-gray)' 
+            }
+        })
+    })
+})
 
 showMenuBtn.addEventListener('click', () => {
     Menu.style.display = 'block'
     showMenuBtn.style.display = 'none'
+    documentMainDiv.classList.remove('margin-left-sm')
+    documentMainDiv.classList.add('margin-left-md')
+    documentMainDiv.classList.add('overflow-x')
 })
 
 hideMenuBtn.addEventListener('click', () => {
     Menu.style.display = 'none'
     showMenuBtn.style.display = 'block'
+    documentMainDiv.classList.remove('margin-left-md')
+    documentMainDiv.classList.remove('overflow-x')
+    documentMainDiv.classList.add('margin-left-sm')
 })
 
 topScrollBtn.addEventListener('click', () => {
