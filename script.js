@@ -4,22 +4,19 @@ const logoBtn = document.querySelector('.logo')
 const docBtnNav = document.querySelector('.doc-btn-nav')
 const setupDiv =  document.querySelector('.setup-div')
 const docDiv =  document.querySelector('.doc-div')
-
 const topScrollBtn =  document.querySelector('.float-btn') 
-
 const formSubmit = document.querySelector('#submit-btn')
 const formInput = document.querySelector('#input')
-
 const hideMenuBtn = document.querySelector('#hide-drawer')
 const showMenuBtn = document.querySelector('#show-drawer')
 const Menu = document.querySelector('#drawer')
-
+const documentMainDiv = document.querySelector('#documentMain')
 const starIcons = document.querySelectorAll('#star-icon')
-
 const openDialogBtn = document.querySelector('.open-modal')
 const modalDiv = document.querySelector('.modal')
 const modalContainer = document.querySelector('.modal-container')
 const dialogActionBtn = document.querySelectorAll('.dialog-action-btn')
+
 
 showMenuBtn.style.display = 'none'
 
@@ -55,11 +52,17 @@ starIcons.forEach(starIcon => {
 showMenuBtn.addEventListener('click', () => {
     Menu.style.display = 'block'
     showMenuBtn.style.display = 'none'
+    documentMainDiv.classList.remove('margin-left-sm')
+    documentMainDiv.classList.add('margin-left-md')
+    documentMainDiv.classList.add('overflow-x')
 })
 
 hideMenuBtn.addEventListener('click', () => {
     Menu.style.display = 'none'
     showMenuBtn.style.display = 'block'
+    documentMainDiv.classList.remove('margin-left-md')
+    documentMainDiv.classList.remove('overflow-x')
+    documentMainDiv.classList.add('margin-left-sm')
 })
 
 topScrollBtn.addEventListener('click', () => {
