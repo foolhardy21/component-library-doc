@@ -1,6 +1,6 @@
 # Documentation for SpaceUI Component Library 
 
-This documentation consists the following:
+This project has responsive documentation site made with HTML, CSS and JS. It consists of the following:
 
 - Instructions on getting started with the library.
 - Components List.
