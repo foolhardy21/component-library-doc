@@ -1,0 +1,24 @@
+.aside-menu {
+    width: 16rem;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.menu-subhead {
+    border-top-style: solid;
+    border-width: thin;
+}
+
+.aside-menu a {
+    width: 100%;
+}
+
+#btn-menu {
+    height: max-content;
+    width: max-content;
+}
+
+code {
+    width: 50rem;
+    overflow-x: auto;
+}
