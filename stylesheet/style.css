@@ -1,9 +1,14 @@
+.modal-container {
+    /* height: 200vh; */
+    /* overflow-y: auto; */
+}
 .aside-menu {
     width: 16rem;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .menu-subhead {
-    /* border-bottom-style: solid; */
     border-top-style: solid;
     border-width: thin;
 }
@@ -12,7 +17,14 @@
     width: 100%;
 }
 
+#btn-menu {
+    height: max-content;
+    width: max-content;
+}
 
+#main-doc {
+    /* height: 150vh; */
+}
 /* * {
     margin: 0;
     padding: 0;
