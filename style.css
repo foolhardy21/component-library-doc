@@ -1,4 +1,19 @@
-* {
+.aside-menu {
+    width: 16rem;
+}
+
+.menu-subhead {
+    /* border-bottom-style: solid; */
+    border-top-style: solid;
+    border-width: thin;
+}
+
+.aside-menu a {
+    width: 100%;
+}
+
+
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -83,4 +98,4 @@ code {
         width: 30rem;
     }
 
-}
+} */
