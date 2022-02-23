@@ -15,7 +15,7 @@
 
 <body>
 
-    <aside class="aside-menu bg-primary pos-fixed dis-hidden">
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
         <ul>
             <li class='flx'>
                 <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
@@ -94,7 +94,8 @@
     </button>
 
     <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
-        <div class="div-demo">
+
+        <div id="div-demo">
             <p class="txt-lg txt-cap txt-primary mg-btm-s">basic alerts</p>
             <p id="basic-err" class="txt-md txt-cap txt-primary mg-btm-xs">error</p>
             <div class='flx flx-maj-stretch pd-xs txt-md alert-size-md txt-secondary bg-secondary'>
@@ -264,7 +265,21 @@
                 &lt;/div&gt;
                 </code>
             </pre>
+
+            <p id="alert-css" class="txt-md txt-cap txt-primary mg-btm-xs">alert css</p>
+            <pre>
+                <code>
+                .alert-size-s {
+                    width: 20rem;
+                }
+
+                .alert-size-md {
+                    width: 30rem;
+                }
+                </code>
+            </pre>
         </div>
+
         <aside class="aside-submenu pos-sticky t-0">
             <ul>
                 <li id="pg-sublink" class="mg-btm-s">
@@ -285,11 +300,13 @@
                 <li id="pg-sublink" class="mg-btm-s">
                     <a href="#solid-succ" class="txt-primary txt-cap">solid success</a>
                 </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#alert-css" class="txt-primary txt-cap">alert CSS</a>
+                </li>
             </ul>
         </aside>
+
     </main>
-
-
 
 </body>
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>

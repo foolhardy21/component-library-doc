@@ -15,7 +15,7 @@
 
 <body>
 
-    <aside class="aside-menu bg-primary pos-fixed dis-hidden">
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
         <ul>
             <li class='flx'>
                 <a href="../../index.html" class="btn-txt bg-primary txt-primary txt-md txt-cap pd-s">getting
@@ -92,10 +92,106 @@
         </span>
     </button>
 
-    <main id="main-doc" class="bg-primary flx flx-maj-stretch">
-        <h1>avatars</h1>
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2">
+
+        <div id="div-demo">
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">avatars</p>
+            <p id="avt-size" class="txt-md txt-cap txt-primary mg-btm-xs">different sizes</p>
+            <img src='../../assets/avatar-1.jpg' class='brd-full img-fit-cover' />
+            <img src='../../assets/avatar-2.jpg' class='brd-full img-fit-cover' />
+            <img src='../../assets/avatar-3.jpg' class='brd-full img-fit-cover' />
+            <pre>
+                <code>
+                &lt;div&gt;
+                    &lt;img src='../../assets/avatar-1.jpg' class='brd-full img-fit-cover' /&gt;
+                    &lt;img src='../../assets/avatar-2.jpg' class='brd-full img-fit-cover' /&gt;
+                    &lt;img src='../../assets/avatar-3.jpg' class='brd-full img-fit-cover' /&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="avt-grp" class="txt-md txt-cap txt-primary mg-btm-xs">avatar group</p>
+            <div class='inline-block'>
+                <img src='../../assets/avatar-2.jpg' class='brd-full b-solid b-secondary img-fit-cover' />
+                <img src='../../assets/avatar-2.jpg'
+                    class='brd-full b-solid b-secondary img-fit-cover avt-overlap-xlg' />
+                <img src='../../assets/avatar-2.jpg'
+                    class='brd-full b-solid b-secondary img-fit-cover avt-overlap-xlg' />
+                <img src='../../assets/avatar-2.jpg'
+                    class='brd-full b-solid b-secondary img-fit-cover avt-overlap-xlg' />
+            </div>
+            <pre>
+                <code>
+                &lt;div class='dis-inblock'&gt;
+                    &lt;img src='../../assets/avatar-1.jpg' class='brd-full b-solid b-secondary img-fit-cover avt-overlap-xlg' /&gt;
+                    &lt;img src='../../assets/avatar-2.jpg' class='brd-full b-solid b-secondary img-fit-cover avt-overlap-xlg' /&gt;
+                    &lt;img src='../../assets/avatar-3.jpg' class='brd-full b-solid b-secondary img-fit-cover avt-overlap-xlg' /&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="avt-badge" class="txt-md txt-cap txt-primary mg-btm-xs">avatar with badge</p>
+            <div class='dis-inblock pos-relative'>
+                <img src='../../assets/avatar-2.jpg' class='brd-full img-fit-cover' />
+                <div class='bg-success brd-full badge-size-s pos-absolute br-5'></div>
+            </div>
+            <pre>
+                <code>
+                &lt;div class='dis-inblock pos-relative'&gt;
+                    &lt;img src='../../assets/avatar-2.jpg' class='brd-full img-fit-cover' /&gt;
+                    &lt;div class='bg-success brd-full badge-size-s pos-absolute br-5'&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="avt-css" class="txt-md txt-cap txt-primary">avatar css</p>
+            <pre>
+                <code>                    
+                .avt-overlap-xs {
+                    margin-left: -0.5rem;
+                }
+
+                .avt-overlap-s {
+                    margin-left: -1rem;
+                }
+
+                .avt-overlap-md {
+                    margin-left: -1.5rem;
+                }
+
+                .avt-overlap-lg {
+                    margin-left: -2rem;
+                }
+
+                .avt-overlap-xlg {
+                    margin-left: -3rem;
+                }
+
+                .avt-overlap-xxlg {
+                    margin-left: -4rem;
+                }
+                </code>
+            </pre>
+        </div>
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#avt-size" class="txt-md txt-primary txt-cap">avatar sizes</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#avt-grp" class="txt-md txt-primary txt-cap">avatar group</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#avt-badge" class="txt-md txt-primary txt-cap">avatar with badge</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#avt-css" class="txt-md txt-primary txt-cap">avatar css</a>
+                </li>
+            </ul>
+        </aside>
+
     </main>
-    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
