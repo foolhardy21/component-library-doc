@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .aside-menu {
     width: 16rem;
-    max-height: 100vh;
+    height: 100vh;
     overflow-y: auto;
 }
 
@@ -21,4 +25,13 @@
 code {
     width: 50rem;
     overflow-x: auto;
+}
+
+.aside-submenu {
+    height: max-content;
+}
+
+.grid-maxcols-2 {
+    grid-template-columns: 1fr 16rem;
+    justify-items: center;
 }

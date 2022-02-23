@@ -5,4 +5,10 @@
     .link-smedia {
         flex-direction: column;
     }
+    .aside-submenu {
+        display: none;
+    }
+    .grid-maxcols-2 {
+        grid-template-columns: 1fr;
+    }
 }
