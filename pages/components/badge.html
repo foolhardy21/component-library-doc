@@ -15,7 +15,7 @@
 
 <body>
 
-    <aside class="aside-menu bg-primary pos-fixed dis-hidden">
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
         <ul>
             <li class='flx'>
                 <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
@@ -86,16 +86,133 @@
         </ul>
     </aside>
 
-    <button id="btn-menu" class="btn-solid bg-secondary pd-s">
+    <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
         <span class="material-icons icon-secondary">
             menu_open
         </span>
     </button>
 
-    <main id="main-doc" class="bg-primary flx flx-maj-stretch">
-        <h1>badge</h1>
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
+
+        <div id="div-demo">
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">badges</p>
+            <p id="notif-xs" class="txt-md txt-cap txt-primary mg-btm-xs">notification badges extra small</p>
+            <div class="flx">
+                <div class='badge-size-xs bg-success brd-full mg-right-xs'></div>
+                <div class='badge-size-xs bg-err brd-full mg-right-xs'></div>
+                <div class='badge-size-xs bg-warn brd-full mg-right-xs'></div>
+            </div>
+            <pre>
+                <code>
+                &lt;div class='badge-size-xs bg-success brd-full'&gt;&lt;/div&gt;
+                &lt;div class='badge-size-xs bg-err brd-full'&gt;&lt;/div&gt;
+                &lt;div class='badge-size-xs bg-warn brd-full'&gt;&lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="notif-s" class="txt-md txt-cap txt-primary mg-btm-xs">notification badges small</p>
+            <div class="flx">
+                <div class='badge-size-s bg-success brd-full mg-right-xs'></div>
+                <div class='badge-size-s bg-err brd-full mg-right-xs'></div>
+                <div class='badge-size-s bg-warn brd-full mg-right-xs'></div>
+            </div>
+            <pre>
+                <code>
+                &lt;div class='badge-size-s bg-success brd-full'&gt;&lt;/div&gt;
+                &lt;div class='badge-size-s bg-err brd-full'&gt;&lt;/div&gt;
+                &lt;div class='badge-size-s bg-warn brd-full'&gt;&lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="txt-badge" class="txt-md txt-cap txt-primary mg-btm-xs">text only badges</p>
+            <div class="flx flx-min-center">
+                <div class='badge-size-md txt-md flx flx-center brd-full txt-secondary bg-secondary mg-right-xs'>
+                    4
+                </div>
+                <div class='badge-size-lg txt-ucase txt-s txt-600 flx flx-center brd-s bg-warn mg-right-xs'>
+                    offer
+                </div>
+                <div class='badge-size-xxlg txt-ucase txt-md txt-600 flx flx-center brd-s bg-warn mg-right-xs'>
+                    offer
+                </div>
+            </div>
+            <pre>
+                <code>
+                &lt;div class='badge-size-md txt-md flx flx-center brd-full txt-secondary bg-secondary'&gt;4&lt;/div&gt;
+                &lt;div class='badge-size-lg txt-ucase txt-s txt-600 flx flx-center brd-s bg-warn'&gt;offer&lt;/div&gt;
+                &lt;div class='badge-size-xxlg txt-ucase txt-md txt-600 flx flx-center brd-s bg-warn'&gt;offer&lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="icon-badge" class="txt-md txt-cap txt-primary mg-btm-xs">badge on icon</p>
+            <div class="flx">
+                <div class='dis-inblock pos-relative mg-right-s'>
+                    <span class='material-icons'>account_balance</span>
+                    <div class='badge-size-s flx flx-center brd-full bg-success pos-absolute tl-60'></div>
+                </div>
+                <div class='dis-inblock pos-relative'>
+                    <span class='material-icons'>account_balance</span>
+                    <div
+                        class='badge-size-s txt-s flx flx-center brd-full bg-secondary txt-secondary pos-absolute tl-60'>
+                        1
+                    </div>
+                </div>
+            </div>
+            <pre>
+                <code>
+                &lt;div class='badge-size-s flx flx-center brd-full bg-success pos-absolute tl-60'&gt;&lt;/div&gt;
+                &lt;div class='dis-inblock pos-relative'&gt;
+                    &lt;span class='material-icons'&gt;account_balance&lt;/span&gt;
+                    &lt;div class='badge-size-s txt-s flx flx-center brd-full bg-secondary txt-secondary pos-absolute tl-60'&gt;1&lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="badge-css" class="txt-md txt-cap txt-primary mg-btm-xs">badge css</p>
+            <pre>
+                <code>
+                .badge-size-xs {
+                    width: 0.5rem;
+                    height: 0.5rem;
+                }
+                    
+                .badge-size-s {
+                    width: 1rem;
+                    height: 1rem;
+                }
+                    
+                .badge-size-md {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+                    
+                .badge-size-lg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+                </code>
+            </pre>
+
+        </div>
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#notif-xs" class="txt-primary txt-cap">notification badge</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#txt-badge" class="txt-primary txt-cap">text badge</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#icon-badge" class="txt-primary txt-cap">badge on icon</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#badge-css" class="txt-primary txt-cap">badge css</a>
+                </li>
+
+            </ul>
+        </aside>
     </main>
-    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
