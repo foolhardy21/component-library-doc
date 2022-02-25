@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/main.css' />
+    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
     <link rel='stylesheet' href='../../stylesheet/style.css' />
@@ -15,7 +15,7 @@
 
 <body>
 
-    <aside class="aside-menu bg-primary pos-fixed dis-hidden">
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
         <ul>
             <li class='flx'>
                 <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
@@ -86,16 +86,101 @@
         </ul>
     </aside>
 
-    <button id="btn-menu" class="btn-solid bg-secondary pd-s">
+    <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
         <span class="material-icons icon-secondary">
             menu_open
         </span>
     </button>
 
-    <main id="main-doc" class="bg-primary flx flx-maj-stretch">
-        <h1>image</h1>
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
+
+        <div id="div-demo">
+
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">images</p>
+            <p id="img-density" class="txt-md txt-cap txt-primary mg-btm-xs">density responsiveness at 900px</p>
+            <img srcset='../../assets/img.jpg 500w,
+            ../../assets/img2.jpg 200w' sizes="(min-width: 900px) 500px,
+            200px" alt='Hairy cow' class='img-fit-cover' />
+            <pre>
+                <code>
+                &lt;img srcset='../../assets/img.jpg 500w,
+                ../../assets/img2.jpg 200w' sizes="(min-width: 900px) 500px,
+                200px" alt='Hairy cow' class='img-fit-cover' /&gt;
+                </code>
+            </pre>
+
+            <p id="img-res" class="txt-md txt-cap txt-primary mg-btm-xs">dimension responsiveness</p>
+            <img src='../../assets/img.jpg' alt='Hairy cow' class='img-md img-fit-cover' />
+            <pre>
+                <code>
+                &lt;img src='../../assets/img.jpg' alt='Hairy cow' class='img-md img-fit-cover' /&gt;
+                </code>
+            </pre>
+
+            <p id="img-round" class="txt-md txt-cap txt-primary mg-btm-xs">round image</p>
+            <img src='../../assets/img.jpg' alt='Hairy cow' class='img-s brd-full img-fit-cover' />
+            <pre>
+                <code>
+                &lt;img src='../../assets/img.jpg' alt='Hairy cow' class='img-s brd-full img-fit-cover' /&gt;
+                </code>
+            </pre>
+
+            <p id="img-css" class="txt-md txt-cap txt-primary mg-btm-xs">image css</p>
+            <pre>
+                <code>
+                /* image fit  */
+
+                .img-fit-cover {
+                    object-fit: cover;
+                }
+                    
+                .img-fit-contain {
+                    object-fit: contain;
+                }
+                    
+                /* image dimensions */
+                    
+                .img-xs {
+                    width: 8rem;
+                }
+                    
+                .img-s {
+                    width: 15rem;
+                }
+                    
+                .img-md {
+                    width: 20rem;
+                }
+                    
+                .img-lg {
+                    width: 25rem;
+                }
+                    
+                .img-xlg {
+                    width: 30rem;
+                }                    
+                </code>
+            </pre>
+
+        </div>
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#img-density" class="txt-primary txt-cap">responsive density</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#img-res" class="txt-primary txt-cap">responsive dimensions</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#img-round" class="txt-primary txt-cap">round image</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#img-css" class="txt-primary txt-cap">image css</a>
+                </li>
+            </ul>
+        </aside>
     </main>
-    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
