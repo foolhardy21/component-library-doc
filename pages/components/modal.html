@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/main.css' />
+    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
     <link rel='stylesheet' href='../../stylesheet/style.css' />
@@ -15,7 +15,7 @@
 
 <body>
 
-    <aside class="aside-menu bg-primary pos-fixed dis-hidden">
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
         <ul>
             <li class='flx'>
                 <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
@@ -86,20 +86,121 @@
         </ul>
     </aside>
 
-    <button id="btn-menu" class="btn-solid bg-secondary pd-s">
+    <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
         <span class="material-icons icon-secondary">
             menu_open
         </span>
     </button>
 
-    <main id="main-doc" class="bg-primary flx flx-maj-stretch">
-        <h1>modals</h1>
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
+
+        <div id="div-demo">
+
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">modal</p>
+            <p id="modal-basic" class="txt-md txt-cap txt-primary mg-btm-xs">basic modal</p>
+            <button class='open-modal btn-solid bg-secondary txt-secondary pd-xs'>open modal</button>
+            <section class='flx flx-center modal-container dis-hidden'>
+                <article class='modal-md txt-primary pd-lg bg-primary'>
+                    <h3 class='txt-lg txt-cap'>dialog header</h3>
+                    <p class='txt-md txt-cap'>dialog body text</p>
+                    <footer class='mg-top-md flx flx-maj-end'>
+                        <button class='btn-txt txt-cap txt-ucase mg-right-s dialog-action-btn'>action 1</button>
+                        <button class='btn-solid bg-secondary txt-secondary txt-ucase pd-xs dialog-action-btn'>action
+                            2</button>
+                    </footer>
+                </article>
+            </section>
+            <pre>
+                <code>
+                    &lt;section class='flx flx-center modal-container dis-hidden'&gt;
+                        &lt;article class='modal-md txt-primary pd-lg bg-primary'&gt;
+                            &lt;h3 class='txt-lg txt-cap'&gt;dialog header&lt;/h3&gt;
+                            &lt;p class='txt-md txt-cap'&gt;dialog body text&lt;/p&gt;
+                            &lt;footer class='mg-top-md flx flx-maj-end'&gt;
+                                &lt;button class='btn-txt txt-cap txt-ucase mg-right-s dialog-action-btn'&gt;
+                                    action 1
+                                &lt;/button&gt;
+                                &lt;button class='btn-solid bg-secondary txt-secondary txt-ucase pd-xs dialog-action-btn'&gt;
+                                    action 2
+                                &lt;/button&gt;
+                            &lt;/footer&gt;
+                        &lt;/article&gt;
+                    &lt;/section&gt;
+                </code>
+            </pre>
+
+            <p id="modal-css" class="txt-md txt-cap txt-primary mg-btm-xs">modal css</p>
+            <pre>
+                <code>
+                .modal-container {
+                    background: rgb(0,0,0,0.4); /* modal container background opacity */
+                    width: 100vw;
+                    height: 100vh;
+                }
+                    
+                /* modal sizes */
+                    
+                .modal-s {
+                    width: 20rem;
+                }
+                    
+                .modal-md {
+                    width: 30rem;
+                }
+                    
+                .modal-lg {
+                    width: 40rem;
+                }                                  
+                </code>
+            </pre>
+
+            <p id="modal-js" class="txt-md txt-cap txt-primary mg-btm-xs">modal js</p>
+            <pre>
+                <code>
+                const openDialogBtn = document.querySelector('.open-modal')
+                const modalDiv = document.querySelector('.modal')
+                const modalContainer = document.querySelector('.modal-container')
+                const dialogActionBtn = document.querySelectorAll('.dialog-action-btn')
+                
+                openDialogBtn.addEventListener('click', () => {
+                    modalContainer.classList.remove('dis-hidden')
+                    modalContainer.classList.add('pos-fixed')
+                    modalContainer.classList.add('tl-0')
+                    modalContainer.classList.add('z-5')
+                })
+                
+                dialogActionBtn.forEach(actionBtn => {
+                    actionBtn.addEventListener('click', () => {
+                        modalContainer.classList.add('dis-hidden')
+                        modalContainer.classList.remove('pos-fixed')
+                        modalContainer.classList.remove('tl-0')
+                        modalContainer.classList.remove('z-5')
+                    })
+                })
+                </code>
+            </pre>
+
+        </div>
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#modal-basic" class="txt-primary txt-cap">modal</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#modal-css" class="txt-primary txt-cap">modal css</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#modal-js" class="txt-primary txt-cap">modal js</a>
+                </li>
+            </ul>
+        </aside>
     </main>
-    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <script src='../../main-script.js'></script>
+<script src='../../scripts/modal-script.js'></script>
 
 </html>

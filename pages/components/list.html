@@ -316,6 +316,27 @@
                 </code>
             </pre>
 
+            <p id="list-js" class="txt-md txt-cap txt-primary mg-btm-xs">list js</p>
+            <pre>
+                <code>
+                const listItems = document.querySelectorAll('.list-itm')
+
+                listItems.forEach((item) => {
+                    item.addEventListener('mouseover', () => {
+                        item.style.cursor = 'pointer'
+                    })
+                    item.addEventListener('click', () => {
+                        listItems.forEach(item2 => {
+                            item2.classList.remove('txt-600')
+                            item2.classList.remove('bg-off-primary')    
+                        })
+                        item.classList.add('txt-600')
+                        item.classList.add('bg-off-primary')
+                    })  
+                })
+                </code>
+            </pre>
+
         </div>
 
         <aside class="aside-submenu pos-sticky t-0">
@@ -329,6 +350,9 @@
                 <li id="pg-sublink" class="mg-btm-s">
                     <a href="#list-css" class="txt-primary txt-cap">list css</a>
                 </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#list-js" class="txt-primary txt-cap">list js</a>
+                </li>
             </ul>
         </aside>
     </main>
@@ -337,5 +361,6 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <script src='../../main-script.js'></script>
+<script src='../../scripts/list-script.js'></script>
 
 </html>
