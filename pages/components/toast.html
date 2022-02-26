@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/main.css' />
+    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
     <link rel='stylesheet' href='../../stylesheet/style.css' />
@@ -15,7 +15,7 @@
 
 <body>
 
-    <aside class="aside-menu bg-primary pos-fixed dis-hidden">
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
         <ul>
             <li class='flx'>
                 <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
@@ -86,20 +86,91 @@
         </ul>
     </aside>
 
-    <button id="btn-menu" class="btn-solid bg-secondary pd-s">
+    <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
         <span class="material-icons icon-secondary">
             menu_open
         </span>
     </button>
 
-    <main id="main-doc" class="bg-primary flx flx-maj-stretch">
-        <h1>toasts</h1>
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
+
+        <div id="div-demo">
+
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">Toasts</p>
+            <p id="toast-basic" class="txt-md txt-cap txt-primary mg-btm-xs">basic toast</p>
+            <button class="btn-toast btn-solid bg-secondary txt-secondary pd-xs">show toast</button>
+            <pre>
+                <code>
+                    &lt;div class="toast-container pos-fixed toast-pos flx flx-center"&gt;
+                        &lt;div class='toast-md txt-secondary bg-secondary pd-s flx flx-maj-stretch flx-min-center'&gt;
+                            &lt;div class='txt-md'&gt;
+                                Cannot send the photo. Check the internet connection.
+                                &lt;button class='pd-xs txt-ucase txt-600 btn-txt bg-secondary txt-secondary'&gt;
+                                    retry
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;span class='material-icons icon-secondary'&gt;
+                                close
+                            &lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="toast-css" class="txt-md txt-cap txt-primary mg-btm-xs">toast css</p>
+            <pre>
+                <code>
+                    .toast-container {
+                        width: 100%;
+                    }
+                    
+                    .toast-pos {
+                        bottom: 1rem;
+                    }
+                    
+                    .toast-s {
+                        width: 20rem;
+                    }
+                    
+                    .toast-md {
+                        width: 35rem;
+                    }
+                    
+                    .toast-lg {
+                        width: 50rem;
+                    }                    
+                </code>
+            </pre>
+
+
+        </div>
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#toast-basic" class="txt-primary txt-cap">basic toast</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#toast-css" class="txt-primary txt-cap">toast css</a>
+                </li>
+            </ul>
+        </aside>
     </main>
+
+    <div class="toast-container pos-fixed toast-pos flx flx-center dis-hidden">
+        <div class='toast-md txt-secondary bg-secondary pd-s flx flx-maj-stretch flx-min-center'>
+            <div class='txt-md'>
+                Cannot send the photo. Check the internet connection.
+                <button class='pd-xs txt-ucase txt-600 btn-txt bg-secondary txt-secondary'>retry</button>
+            </div>
+            <span class='material-icons icon-secondary'>close</span>
+        </div>
     </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <script src='../../main-script.js'></script>
+<script src='../../scripts/toast-script.js'></script>
 
 </html>
