@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
+    <link rel='stylesheet' href='../../stylesheet/style.css' />
+    <title>Akira_UI</title>
+</head>
+
+<body>
+
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
+        <ul>
+            <li class='flx'>
+                <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
+                    started</a>
+            </li>
+            <li class='flx txt-md txt-600 txt-ucase pd-s menu-subhead b-off-primary'>utilities</li>
+            <li class='flx'>
+                <a href="./display.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">display</a>
+            </li>
+            <li class='flx'>
+                <a href="./position.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">positioning</a>
+            </li>
+            <li class='flx'>
+                <a href="./text.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">text</a>
+            </li>
+            <li class='flx'>
+                <a href="./border.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">border</a>
+            </li>
+            <li class='flx'>
+                <a href="./icon.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">icons</a>
+            </li>
+            <li class='flx'>
+                <a href="./spacing.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">spacing</a>
+            </li>
+            <li class='flx'>
+                <a href="./color.html" class="btn-solid txt-md bg-secondary txt-secondary txt-cap pd-s">colors</a>
+            </li>
+            <li class='flx'>
+                <a href="./responsive.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">responsiveness</a>
+            </li>
+            <li class='flx txt-md txt-600 txt-ucase pd-s menu-subhead b-off-primary'>components</li>
+            <li class='flx'>
+                <a href="../components/alert.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">alerts</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/avatar.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">avatars</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/badge.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">badges</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/button.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">buttons</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/card.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">cards</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/image.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">images</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/input.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">inputs</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/list.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">lists</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/modal.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">modals</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/navbar.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">navbars</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/rating.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">ratings</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/toast.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">toasts</a>
+            </li>
+        </ul>
+    </aside>
+
+    <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
+        <span class="material-icons icon-secondary">
+            menu_open
+        </span>
+    </button>
+
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
+
+        <div id="div-demo">
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">colors</p>
+            <p id="clr-vars" class="txt-md txt-cap txt-primary mg-btm-xs">colors variables</p>
+            <pre>
+                <code>
+                    /*theme of this component library*/
+                    :root {
+                        --clr-primary: #ffffff;
+                        --clr-off-primary: #CCCAC9;
+                        --clr-secondary: #000000;
+                        --clr-off-secondary: #323232;
+                        --clr-accent: #e91c23;
+                        
+                        --clr-warning: #FFCE00;
+                        --clr-success: #4caf50;
+                        --clr-error: #f44336;
+                    }                                 
+                </code>
+            </pre>
+
+            <p id="clr-txt" class="txt-md txt-cap txt-primary mg-btm-xs">text colors</p>
+            <pre>
+                <code>
+                    /* primary text is dark and secondary text is light */
+                    .txt-primary {
+                        color: var(--clr-secondary);
+                    }
+                    
+                    .txt-secondary {
+                        color: var(--clr-primary)
+                    }
+                    
+                    .txt-off-primary {
+                        color: var(--clr-off-secondary)
+                    }
+                    
+                    .txt-off-secondary {
+                        color: var(--clr-off-primary)
+                    }
+                    
+                    .txt-accent {
+                        color: var(--clr-accent);
+                    }
+                    
+                    .txt-err {
+                        color: var(--clr-error);
+                    }
+                    
+                    .txt-warn {
+                        color: var(--clr-warning);
+                    }
+                    
+                    .txt-success {
+                        color: var(--clr-success);
+                    }
+                </code>
+            </pre>
+
+            <p id="clr-bg" class="txt-md txt-cap txt-primary mg-btm-xs">background colors</p>
+            <pre>
+                <code>
+                    /* primary background is light and secondary is dark */
+                    .bg-primary {
+                        background: var(--clr-primary);
+                    }
+                    
+                    .bg-off-primary {
+                        background: var(--clr-off-primary)
+                    }
+                    
+                    .bg-off-secondary {
+                        background: var(--clr-off-secondary)
+                    }
+                    
+                    .bg-secondary {
+                        background: var(--clr-secondary);
+                    }
+                    
+                    .bg-accent {
+                        background: var(--clr-accent);
+                    }
+                    
+                    .bg-err {
+                        background: var(--clr-error);
+                    }
+                    
+                    .bg-warn {
+                        background: var(--clr-warning);
+                    }
+                    
+                    .bg-success {
+                        background: var(--clr-success);
+                    }      
+                </code>
+            </pre>
+
+        </div>
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#clr-vars" class="txt-primary txt-cap">color variables</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#clr-txt" class="txt-primary txt-cap">text colors</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#clr-bg" class="txt-primary txt-cap">background colors</a>
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script src='../../main-script.js'></script>
+
+</html>

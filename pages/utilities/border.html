@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
+    <link rel='stylesheet' href='../../stylesheet/style.css' />
+    <title>Akira_UI</title>
+</head>
+
+<body>
+
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
+        <ul>
+            <li class='flx'>
+                <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
+                    started</a>
+            </li>
+            <li class='flx txt-md txt-600 txt-ucase pd-s menu-subhead b-off-primary'>utilities</li>
+            <li class='flx'>
+                <a href="./display.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">display</a>
+            </li>
+            <li class='flx'>
+                <a href="./position.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">positioning</a>
+            </li>
+            <li class='flx'>
+                <a href="./text.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">text</a>
+            </li>
+            <li class='flx'>
+                <a href="./border.html" class="btn-solid txt-md bg-secondary txt-secondary txt-cap pd-s">border</a>
+            </li>
+            <li class='flx'>
+                <a href="./icon.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">icons</a>
+            </li>
+            <li class='flx'>
+                <a href="./spacing.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">spacing</a>
+            </li>
+            <li class='flx'>
+                <a href="./color.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">colors</a>
+            </li>
+            <li class='flx'>
+                <a href="./responsive.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">responsiveness</a>
+            </li>
+            <li class='flx txt-md txt-600 txt-ucase pd-s menu-subhead b-off-primary'>components</li>
+            <li class='flx'>
+                <a href="../components/alert.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">alerts</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/avatar.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">avatars</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/badge.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">badges</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/button.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">buttons</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/card.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">cards</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/image.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">images</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/input.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">inputs</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/list.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">lists</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/modal.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">modals</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/navbar.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">navbars</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/rating.html"
+                    class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">ratings</a>
+            </li>
+            <li class='flx'>
+                <a href="../components/toast.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">toasts</a>
+            </li>
+        </ul>
+    </aside>
+
+    <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
+        <span class="material-icons icon-secondary">
+            menu_open
+        </span>
+    </button>
+
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
+
+        <div id="div-demo">
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">borders</p>
+            <p id="brd-css" class="txt-md txt-cap txt-primary mg-btm-xs">border css</p>
+            <pre>
+                <code>
+                    .b-solid {
+                        border-style: solid;
+                    }
+                    
+                    /* border radius small */
+                    
+                    .brd-s {
+                        border-radius: 5px;
+                    }
+                    
+                    .brd-tl-s {
+                        border-top-left-radius: 5px;
+                    }
+                    
+                    .brd-tr-s {
+                        border-top-right-radius: 5px;
+                    }
+                    
+                    .brd-bl-s {
+                        border-bottom-left-radius: 5px;
+                    }
+                    
+                    .brd-br-s {
+                        border-bottom-right-radius: 5px;
+                    }
+                    
+                    /* border radius medium */
+                    
+                    .brd-md {
+                        border-radius: 10px;
+                    }
+                    
+                    .brd-tl-md {
+                        border-top-left-radius: 10px;
+                    }
+                    
+                    .brd-tr-md {
+                        border-top-right-radius: 10px;
+                    }
+                    
+                    .brd-bl-md {
+                        border-bottom-left-radius: 10px;
+                    }
+                    
+                    .brd-br-md {
+                        border-bottom-right-radius: 10px;
+                    }
+                    
+                    /* border radius large */
+                    
+                    .brd-lg {
+                        border-radius: 15px;
+                    }
+                    
+                    .brd-tl-lg {
+                        border-top-left-radius: 15px;
+                    }
+                    
+                    .brd-tr-lg {
+                        border-top-right-radius: 15px;
+                    }
+                    
+                    .brd-bl-lg {
+                        border-bottom-left-radius: 15px;
+                    }
+                    
+                    .brd-br-lg {
+                        border-bottom-right-radius: 15px;
+                    }
+                    
+                    /* border radius circle */
+                    
+                    .brd-full {
+                        border-radius: 50%;
+                    }
+                    
+                    /* border colors */
+                    
+                    .b-primary {
+                        border-color: var(--clr-secondary);
+                    }
+                    
+                    .b-secondary {
+                        border-color: var(--clr-primary);
+                    }
+                    
+                    .b-accent {
+                        border-color: var(--clr-accent);
+                    }
+                    
+                    .b-off-primary {
+                        border-color: var(--clr-off-primary);
+                    }
+                    
+                    .b-off-secondary {
+                        border-color: var(--clr-off-secondary);
+                    }                    
+                </code>
+            </pre>
+
+        </div>
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#brd-css" class="txt-primary txt-cap">border css</a>
+                </li>
+            </ul>
+        </aside>
+
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script src='../../main-script.js'></script>
+
+</html>
