@@ -15,6 +15,14 @@
 
 <body>
 
+    <!-- theme toggle button -->
+
+    <span id="btn-theme" class="material-icons pos-absolute tr-1 icon-primary pd-s">
+        bedtime
+    </span>
+
+    <!-- left navigation for pages -->
+
     <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
         <ul>
             <li class='flx'>
@@ -92,11 +100,15 @@
         </ul>
     </aside>
 
+    <!-- button for toggling left navigation's visibility -->
+
     <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
         <span class="material-icons icon-secondary">
             menu_open
         </span>
     </button>
+
+    <!-- current document -->
 
     <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
 
@@ -185,6 +197,8 @@
 
         </div>
 
+        <!-- right navigation in page links -->
+
         <aside class="aside-submenu pos-sticky t-0">
             <ul>
                 <li id="pg-sublink" class="mg-btm-s">
@@ -199,5 +213,6 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <script src='../../main-script.js'></script>
+<script src='../../scripts/theme-script.js'></script>
 
 </html>

@@ -6,14 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel='stylesheet' href='https://deploy-preview-11--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
     <link rel='stylesheet' href='./stylesheet/style.css' />
     <title>Akira_UI</title>
 </head>
 
-<body>
+<body class="bg-primary">
+
+    <!-- theme toggle button -->
+
+    <span id="btn-theme" class="material-icons pos-absolute tr-1 icon-primary pd-s">
+        bedtime
+    </span>
+
+    <!-- left navigation bar for pages -->
 
     <aside class="aside-menu bg-primary pos-fixed dis-hidden">
         <ul>
@@ -106,11 +114,15 @@
         </ul>
     </aside>
 
+    <!-- button for toggling left navigation -->
+
     <button id="btn-menu" class="btn-solid bg-secondary pd-s">
         <span class="material-icons icon-secondary">
             menu_open
         </span>
     </button>
+
+    <!-- current document -->
 
     <main id="main-doc" class="bg-primary flx flx-column flx-min-center">
         <p class="txt-xxlg txt-ucase txt-accent mg-btm-lg">akira ui</p>
@@ -120,7 +132,7 @@
         </p>
         <pre>
             <code>
-            &lt;link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/main.css' /&gt; 
+            &lt;link rel='stylesheet' href='https://deploy-preview-11--festive-mestorf-acecb0.netlify.app/stylesheet/main.css' /&gt; 
             </code>
         </pre>
         <p class="txt-md txt-cap">along with the stylesheet you would need to import material icons.</p>
@@ -144,5 +156,6 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <script src='main-script.js'></script>
+<script src='./scripts/theme-script.js'></script>
 
 </html>

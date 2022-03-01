@@ -1,5 +1,6 @@
 const starIcons = document.querySelectorAll('#star-icon')
 
+// update rating on click 
 starIcons.forEach(starIcon => {
     starIcon.addEventListener('click', (e) => {
         const maxRating = e.target.dataset.value
