@@ -31,10 +31,6 @@ html {
     justify-items: center;
 }
 
-#main-doc {
-    overflow-x: auto;
-}
-
 code {
     width: 50rem;
     overflow-x: auto;
