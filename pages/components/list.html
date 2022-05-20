@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
+    <link rel='stylesheet' href='../../stylesheet/style.css' />
+    <title>Akira_UI</title>
+</head>
+
+<body class="bg-primary">
+
+    <!-- theme toggle button -->
+
+    <span id="btn-theme" class="material-icons pos-absolute tr-1 icon-primary pd-s">
+        bedtime
+    </span>
+
+    <!-- left navigation for pages -->
+
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
+        <ul>
+            <li class='flx'>
+                <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
+                    started</a>
+            </li>
+            <li class='flx txt-md txt-600 txt-ucase pd-s menu-subhead b-off-primary'>utilities</li>
+            <li class='flx'>
+                <a href="../utilities/display.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">display</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/position.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">positioning</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/text.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">text</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/border.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">border</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/icon.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">icons</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/spacing.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">spacing</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/color.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">colors</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/responsive.html"
+                    class="btn-txt bg-primary txt-primary txt-cap pd-s">responsiveness</a>
+            </li>
+            <li class='flx txt-md txt-600 txt-ucase pd-s menu-subhead b-off-primary'>components</li>
+            <li class='flx'>
+                <a href="./alert.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">alerts</a>
+            </li>
+            <li class='flx'>
+                <a href="./avatar.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">avatars</a>
+            </li>
+            <li class='flx'>
+                <a href="./badge.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">badges</a>
+            </li>
+            <li class='flx'>
+                <a href="./button.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">buttons</a>
+            </li>
+            <li class='flx'>
+                <a href="./card.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">cards</a>
+            </li>
+            <li class='flx'>
+                <a href="./image.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">images</a>
+            </li>
+            <li class='flx'>
+                <a href="./input.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">inputs</a>
+            </li>
+            <li class='flx'>
+                <a href="./list.html" class="btn-solid bg-secondary txt-secondary txt-cap pd-s">lists</a>
+            </li>
+            <li class='flx'>
+                <a href="./modal.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">modals</a>
+            </li>
+            <li class='flx'>
+                <a href="./navbar.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">navbars</a>
+            </li>
+            <li class='flx'>
+                <a href="./rating.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">ratings</a>
+            </li>
+            <li class='flx'>
+                <a href="./toast.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">toasts</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- button for toggling left navigation's visibility -->
+
+    <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
+        <span class="material-icons icon-secondary">
+            menu_open
+        </span>
+    </button>
+
+    <!-- current document -->
+
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
+
+        <div id="div-demo">
+
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">lists</p>
+            <p id="list-basic" class="txt-md txt-cap txt-primary mg-btm-xs">basic list</p>
+            <div class='list-s bg-primary'>
+                <ul class='txt-primary'>
+                    <li class='flx flx-min-center pd-xs list-itm'>
+                        <span class="material-icons icon-primary mg-right-s">
+                            inbox
+                        </span>
+                        <p class='txt-cap txt-md'>
+                            inbox
+                        </p>
+                    </li>
+                    <li class='flx flx-min-center pd-xs list-itm'>
+                        <span class="material-icons icon-primary mg-right-s">
+                            star
+                        </span>
+                        <p class='txt-cap txt-md'>
+                            star
+                        </p>
+                    </li>
+                    <li class='flx flx-min-center pd-xs list-itm'>
+                        <span class="material-icons icon-primary mg-right-s">
+                            send
+                        </span>
+                        <p class='txt-cap txt-md'>
+                            sent_mail
+                        </p>
+                    </li>
+                    <li class='flx flx-min-center pd-xs list-itm'>
+                        <span class="material-icons icon-primary mg-right-s">
+                            drafts
+                        </span>
+                        <p class='txt-cap txt-md'>
+                            drafts
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <pre>
+                <code>
+                    &lt;div class='list-s bg-primary'&gt;
+                    &lt;ul class='txt-primary'&gt;
+                        &lt;li class='flx flx-min-center pd-xs list-itm'&gt;
+                            &lt;span class='material-icons icon-primary mg-right-s'&gt;
+                                inbox
+                            &lt;/span&gt;
+                            &lt;p class='txt-cap txt-md'&gt;
+                                inbox
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li class='flx flx-min-center pd-xs list-itm'&gt;
+                            &lt;span class='material-icons icon-primary mg-right-s'&gt;
+                                star
+                            &lt;/span&gt;
+                            &lt;p class='txt-cap txt-md'&gt;
+                                star
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li class='flx flx-min-center pd-xs list-itm'&gt;
+                            &lt;span class='material-icons icon-primary mg-right-s'&gt;
+                                send
+                            &lt;/span&gt;
+                            &lt;p class='txt-cap txt-md'&gt;
+                                sent_mail
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li class='flx flx-min-center pd-xs list-itm'&gt;
+                            &lt;span class='material-icons icon-primary mg-right-s'&gt;
+                                drafts
+                            &lt;/span&gt;
+                            &lt;p class='txt-cap txt-md'&gt;
+                                drafts
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li class='flx flx-min-center pd-xs list-itm'&gt;
+                            &lt;span class='material-icons icon-primary mg-right-s'&gt;
+                                drafts
+                            &lt;/span&gt;
+                            &lt;p class='txt-cap txt-md'&gt;
+                                drafts
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="list-stack" class="txt-md txt-cap txt-primary mg-btm-xs">stacked list</p>
+            <div class='list-md bg-primary'>
+                <ul class='txt-primary'>
+                    <li class='list-itm pd-xs flx flx-maj-stretch flx-min-center'>
+                        <div class='flx flx-min-center'>
+                            <img src='../../assets/avatar-1.jpg' class='brd-full mg-right-md' />
+                            <div>
+                                <p class='txt-cap txt-md'>lioness</p>
+                                <p class='txt-cap txt-md'>hey! pick up the phone</p>
+                            </div>
+                        </div>
+                        <span class='material-icons icon-primary'>
+                            close
+                        </span>
+                    </li>
+                    <li class='list-itm pd-xs flx flx-maj-stretch flx-min-center'>
+                        <div class='flx flx-min-center'>
+                            <img src='../../assets/avatar-1.jpg' class='brd-full mg-right-md' />
+                            <div>
+                                <p class='txt-cap txt-md'>lioness</p>
+                                <p class='txt-cap txt-md'>hey! pick up the phone</p>
+                            </div>
+                        </div>
+                        <span class='material-icons icon-primary'>
+                            close
+                        </span>
+                    </li>
+                    <li class='list-itm pd-xs flx flx-maj-stretch flx-min-center'>
+                        <div class='flx flx-min-center'>
+                            <img src='../../assets/avatar-1.jpg' class='brd-full mg-right-md' />
+                            <div>
+                                <p class='txt-cap txt-md'>lioness</p>
+                                <p class='txt-cap txt-md'>hey! pick up the phone</p>
+                            </div>
+                        </div>
+                        <span class='material-icons icon-primary'>
+                            close
+                        </span>
+                    </li>
+                    <li class='list-itm pd-xs flx flx-maj-stretch flx-min-center'>
+                        <div class='flx flx-min-center'>
+                            <img src='../../assets/avatar-1.jpg' class='brd-full mg-right-md' />
+                            <div>
+                                <p class='txt-cap txt-md'>lioness</p>
+                                <p class='txt-cap txt-md'>hey! pick up the phone</p>
+                            </div>
+                        </div>
+                        <span class='material-icons icon-primary'>
+                            close
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <pre>
+                <code>
+                    &lt;div class='list-md bg-primary'&gt;
+                        &lt;ul class='txt-primary'&gt;
+                            &lt;li class='list-itm pd-xs flx flx-maj-stretch flx-min-center'&gt;
+                                &lt;div class='flx flx-min-center'&gt;
+                                    &lt;img src='../../assets/avatar-1.jpg' class='brd-full mg-right-md' /&gt;
+                                    &lt;div
+                                        &lt;p class='txt-cap txt-md'&gt;lioness&lt;/p&gt;
+                                        &lt;p class='txt-cap txt-md'&gt;hey! pick up the phone&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;span class='material-icons icon-primary'&gt;
+                                    close
+                                &lt;/span&gt;
+                            &lt;/li&gt;
+                            &lt;li class='list-itm pd-xs flx flx-maj-stretch flx-min-center'&gt;
+                                &lt;div class='flx flx-min-center'&gt;
+                                    &lt;img src='../../assets/avatar-1.jpg' class='brd-full mg-right-md' /&gt;
+                                    &lt;div
+                                        &lt;p class='txt-cap txt-md'&gt;lioness&lt;/p&gt;
+                                        &lt;p class='txt-cap txt-md'&gt;hey! pick up the phone&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;span class='material-icons icon-primary'&gt;
+                                    close
+                                &lt;/span&gt;
+                            &lt;/li&gt;
+                            &lt;li class='list-itm pd-xs flx flx-maj-stretch flx-min-center'&gt;
+                                &lt;div class='flx flx-min-center'&gt;
+                                    &lt;img src='../../assets/avatar-1.jpg' class='brd-full mg-right-md' /&gt;
+                                    &lt;div
+                                        &lt;p class='txt-cap txt-md'&gt;lioness&lt;/p&gt;
+                                        &lt;p class='txt-cap txt-md'&gt;hey! pick up the phone&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;span class='material-icons icon-primary'&gt;
+                                    close
+                                &lt;/span&gt;
+                            &lt;/li&gt;
+                            &lt;li class='list-itm pd-xs flx flx-maj-stretch flx-min-center'&gt;
+                                &lt;div class='flx flx-min-center'&gt;
+                                    &lt;img src='../../assets/avatar-1.jpg' class='brd-full mg-right-md' /&gt;
+                                    &lt;div
+                                        &lt;p class='txt-cap txt-md'&gt;lioness&lt;/p&gt;
+                                        &lt;p class='txt-cap txt-md'&gt;hey! pick up the phone&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;span class='material-icons icon-primary'&gt;
+                                    close
+                                &lt;/span&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+
+            <p id="list-css" class="txt-md txt-cap txt-primary mg-btm-xs">list css</p>
+            <pre>
+                <code>
+                /* list sizes */
+
+                .list-s {
+                    width: 10rem;
+                }
+                    
+                .list-md {
+                    width: 20rem;
+                }
+                    
+                .list-lg {
+                    width: 40rem;
+                }
+                    
+                .list-xlg {
+                    width: 100%;
+                }                    
+                </code>
+            </pre>
+
+            <p id="list-js" class="txt-md txt-cap txt-primary mg-btm-xs">list js</p>
+            <pre>
+                <code>
+                const listItems = document.querySelectorAll('.list-itm')
+
+                listItems.forEach((item) => {
+                    item.addEventListener('mouseover', () => {
+                        item.style.cursor = 'pointer'
+                    })
+                    item.addEventListener('click', () => {
+                        listItems.forEach(item2 => {
+                            item2.classList.remove('txt-600')
+                            item2.classList.remove('bg-off-primary')    
+                        })
+                        item.classList.add('txt-600')
+                        item.classList.add('bg-off-primary')
+                    })  
+                })
+                </code>
+            </pre>
+
+        </div>
+
+        <!-- right navigation in page links -->
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#list-basic" class="txt-primary txt-cap">basic list</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#list-stack" class="txt-primary txt-cap">stacked list</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#list-css" class="txt-primary txt-cap">list css</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#list-js" class="txt-primary txt-cap">list js</a>
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script src='../../main-script.js'></script>
+<script src='../../scripts/list-script.js'></script>
+<script src='../../scripts/theme-script.js'></script>
+
+</html>

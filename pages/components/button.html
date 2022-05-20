@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
+    <link rel='stylesheet' href='../../stylesheet/style.css' />
+    <title>Akira_UI</title>
+</head>
+
+<body class="bg-primary">
+
+    <!-- theme toggle button -->
+
+    <span id="btn-theme" class="material-icons pos-absolute tr-1 icon-primary pd-s">
+        bedtime
+    </span>
+
+    <!-- left navigation for pages -->
+
+    <aside class="aside-menu bg-primary pos-fixed dis-hidden z-5">
+        <ul>
+            <li class='flx'>
+                <a href="../../index.html" class="btn-txt txt-md bg-primary txt-primary txt-cap pd-s">getting
+                    started</a>
+            </li>
+            <li class='flx txt-md txt-600 txt-ucase pd-s menu-subhead b-off-primary'>utilities</li>
+            <li class='flx'>
+                <a href="../utilities/display.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">display</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/position.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">positioning</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/text.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">text</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/border.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">border</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/icon.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">icons</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/spacing.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">spacing</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/color.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">colors</a>
+            </li>
+            <li class='flx'>
+                <a href="../utilities/responsive.html"
+                    class="btn-txt bg-primary txt-primary txt-cap pd-s">responsiveness</a>
+            </li>
+            <li class='flx txt-md txt-600 txt-ucase pd-s menu-subhead b-off-primary'>components</li>
+            <li class='flx'>
+                <a href="./alert.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">alerts</a>
+            </li>
+            <li class='flx'>
+                <a href="./avatar.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">avatars</a>
+            </li>
+            <li class='flx'>
+                <a href="./badge.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">badges</a>
+            </li>
+            <li class='flx'>
+                <a href="./button.html" class="btn-solid bg-secondary txt-secondary txt-cap pd-s">buttons</a>
+            </li>
+            <li class='flx'>
+                <a href="./card.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">cards</a>
+            </li>
+            <li class='flx'>
+                <a href="./image.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">images</a>
+            </li>
+            <li class='flx'>
+                <a href="./input.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">inputs</a>
+            </li>
+            <li class='flx'>
+                <a href="./list.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">lists</a>
+            </li>
+            <li class='flx'>
+                <a href="./modal.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">modals</a>
+            </li>
+            <li class='flx'>
+                <a href="./navbar.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">navbars</a>
+            </li>
+            <li class='flx'>
+                <a href="./rating.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">ratings</a>
+            </li>
+            <li class='flx'>
+                <a href="./toast.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">toasts</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- button for toggling left navigation's visibility -->
+
+    <button id="btn-menu" class="btn-solid bg-secondary pd-s pos-fixed t-0">
+        <span class="material-icons icon-secondary">
+            menu_open
+        </span>
+    </button>
+
+    <!-- current document -->
+
+    <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
+
+        <div id="div-demo">
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">buttons</p>
+            <p id="btn-txt" class="txt-md txt-cap txt-primary mg-btm-xs">text button</p>
+            <button class='btn-txt txt-primary txt-md pd-xs txt-ucase'>
+                text
+            </button>
+            <pre>
+                <code>
+                &lt;button class="btn-txt txt-primary txt-md pd-xs txt-ucase"&gt;
+                    text
+                &lt;/button&gt;
+                </code>
+            </pre>
+
+            <p id="btn-solid" class="txt-md txt-cap txt-primary mg-btm-xs">solid button</p>
+            <button class='btn-solid txt-md pd-xs txt-ucase bg-secondary txt-secondary'>solid</button>
+            <pre>
+                <code>
+                &lt;button class="btn-solid txt-md pd-xs txt-ucase bg-secondary txt-secondary"&gt;
+                    solid
+                &lt;/button&gt;
+                </code>
+            </pre>
+
+            <p id="btn-outlined" class="txt-md txt-cap txt-primary mg-btm-xs">outlined button</p>
+            <button class='btn-outlined b-solid b-secondary txt-ucase txt-md pd-xs'>outlined</button>
+            <pre>
+                <code>
+                &lt;button class="btn-outlined b-solid b-secondary txt-ucase txt-md pd-xs"&gt;
+                    outlined
+                &lt;/button&gt;
+                </code>
+            </pre>
+
+            <p id="btn-icontxt" class="txt-md txt-cap txt-primary mg-btm-xs">text with icon button</p>
+            <button class='btn-solid txt-secondary bg-secondary flx flx-center txt-ucase pd-xs txt-md'>
+                <span class='material-icons'>
+                    delete
+                </span>
+                delete
+            </button>
+            <pre>
+                <code>
+                &lt;button class="btn-solid txt-secondary bg-secondary flx flx-center txt-ucase pd-xs txt-md"&gt;
+                    &lt;span class='material-icons'&gt;
+                        delete
+                    &lt;/span&gt;
+                &lt;/button&gt;
+                </code>
+            </pre>
+
+            <p id="btn-icon" class="txt-md txt-cap txt-primary mg-btm-xs">icon button</p>
+            <button class='btn-solid txt-secondary bg-secondary pd-xs flx flx-center brd-full'>
+                <span class='material-icons'>alarm</span>
+            </button>
+            <pre>
+                <code>
+                &lt;button class="btn-solid txt-secondary bg-secondary pd-xs flx flx-center brd-full"&gt;
+                    &lt;span class='material-icons'&gt;
+                        alarm
+                    &lt;/span&gt;
+                &lt;/button&gt;
+                </code>
+            </pre>
+
+            <p id="btn-css" class="txt-md txt-cap txt-primary mg-btm-xs">button css</p>
+            <pre>
+                <code>
+                    /* text button */
+
+                    .btn-txt {
+                        border-style: none;
+                        background: transparent;
+                    }
+                    
+                    .btn-txt:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                    
+                    /* solid button */
+                    
+                    .btn-solid {
+                        border-style: none;
+                    }
+                    
+                    .btn-solid:hover {
+                        cursor: pointer;
+                        background: var(--clr-off-secondary);
+                    }
+                    
+                    /* outlined button */
+                    
+                    .btn-outlined {
+                        background: transparent;
+                    }
+                    
+                    .btn-outlined:hover {
+                        cursor: pointer;
+                        color: var(--clr-off-secondary);
+                        border-color: var(--clr-off-secondary);
+                    }
+                    
+                    /* button full width */
+                    
+                    .btn-width-full {
+                        width: 100%;
+                    }
+                </code>
+            </pre>
+
+        </div>
+
+        <!-- right navigation in page links -->
+
+        <aside class="aside-submenu pos-sticky t-0">
+            <ul>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#btn-txt" class="txt-primary txt-cap">text button</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#btn-solid" class="txt-primary txt-cap">solid button</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#btn-outlined" class="txt-primary txt-cap">outlined button</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#btn-icontxt" class="txt-primary txt-cap">text with icon button</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#btn-icon" class="txt-primary txt-cap">icon button</a>
+                </li>
+                <li id="pg-sublink" class="mg-btm-s">
+                    <a href="#btn-css" class="txt-primary txt-cap">button css</a>
+                </li>
+
+            </ul>
+        </aside>
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script src='../../main-script.js'></script>
+<script src='../../scripts/theme-script.js'></script>
+
+</html>

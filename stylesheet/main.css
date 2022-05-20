@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* main navigation(left) */
+.aside-menu {
+    width: 18rem;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* subheadings in navigation */
+.menu-subhead {
+    border-top-style: solid;
+    border-width: thin;
+}
+
+.aside-menu a {
+    width: 100%;
+    padding-left: 1.5rem;
+}
+
+/* button for toggling main navigation */
+#btn-menu {
+    height: max-content;
+    width: max-content;
+}
+
+.grid-maxcols-2 {
+    grid-template-columns: 1fr 16rem;
+    justify-items: center;
+}
+
+code {
+    width: 50rem;
+    overflow-x: auto;
+}
+
+/* in-page navigation(right) */
+.aside-submenu {
+    height: max-content;
+}
