@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel='stylesheet' href='https://deploy-preview-10--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
+    <link rel='stylesheet' href='https://deploy-preview-12--festive-mestorf-acecb0.netlify.app/stylesheet/style.css' />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css" />
     <link rel='stylesheet' href='../../stylesheet/style.css' />
@@ -72,10 +72,10 @@
                 <a href="./card.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">cards</a>
             </li>
             <li class='flx'>
-                <a href="./image.html" class="btn-solid bg-secondary txt-secondary txt-cap pd-s">images</a>
+                <a href="./drawer.html" class="btn-solid bg-secondary txt-secondary txt-cap pd-s">drawer</a>
             </li>
             <li class='flx'>
-                <a href="./drawer.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">drawer</a>
+                <a href="./image.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">images</a>
             </li>
             <li class='flx'>
                 <a href="./input.html" class="btn-txt bg-primary txt-primary txt-cap pd-s">inputs</a>
@@ -111,70 +111,90 @@
     <main id="main-doc" class="bg-primary grid grid-maxcols-2 pd-xxlg">
 
         <div id="div-demo">
-
-            <p class="txt-lg txt-cap txt-primary mg-btm-s">images</p>
-            <p id="img-density" class="txt-md txt-cap txt-primary mg-btm-xs">density responsiveness at 900px</p>
-            <img srcset='../../assets/img.jpg 500w,
-            ../../assets/img2.jpg 200w' sizes="(min-width: 900px) 500px,
-            200px" alt='Hairy cow' class='img-fit-cover' />
+            <p class="txt-lg txt-cap txt-primary mg-btm-s">Drawer Menu</p>
+            <p id="drawer-basic" class="txt-md txt-cap txt-primary mg-btm-s">drawer is visible for the screens smaller
+                than 768px.</p>
+            <header class="flx flx-min-center flx-maj-start pd-s bg-off-primary">
+                <nav id="nav-big" class="flx flx-min-center">
+                    <p class="txt-primary mg-right-s">profile</p>
+                    <p class="txt-primary mg-right-s">feed</p>
+                    <p class="txt-primary mg-right-s">order</p>
+                    <p class="txt-primary">messages</p>
+                </nav>
+                <div class="pos-relative">
+                    <span id="btn-ham" class="material-icons icon-primary">
+                        menu
+                    </span>
+                    <nav id="nav-small"
+                        class="flx flx-column flx-min-center bg-off-primary pd-s pos-absolute z-10 tl-0">
+                        <button id="btn-close-small" class="btn-txt bg-off-primary pd-xs">
+                            <span class="material-icons mg-btm-s">close</span>
+                        </button>
+                        <p class="txt-primary txt-md txt-cap mg-btm-xs">profile</p>
+                        <p class="txt-primary txt-md txt-cap mg-btm-xs">feed</p>
+                        <p class="txt-primary txt-md txt-cap mg-btm-xs">order</p>
+                        <p class="txt-primary txt-md txt-cap mg-btm-xs">messages</p>
+                    </nav>
+                </div>
+            </header>
             <pre>
                 <code>
-                &lt;img srcset='../../assets/img.jpg 500w,
-                ../../assets/img2.jpg 200w' sizes="(min-width: 900px) 500px,
-                200px" alt='Hairy cow' class='img-fit-cover' /&gt;
+                    &lt;header class="flx flx-min-center flx-maj-start pd-s bg-off-primary"&gt;
+                        &lt;nav id="nav-big" class="flx flx-min-center"&gt;
+                            &lt;p class="txt-primary mg-right-s"&gt;profile&lt;/p&gt;
+                            &lt;p class="txt-primary mg-right-s"&gt;feed&lt;/p&gt;
+                            &lt;p class="txt-primary mg-right-s"&gt;order&lt;/p
+                            &lt;p class="txt-primary"&gt;messages&lt;/p&gt;
+                        &lt;/nav&gt;
+                        &lt;div class="pos-relative"&gt;
+                            &lt;span id="btn-ham" class="material-icons icon-primary"&gt;
+                                menu
+                            &lt;/span&gt;
+                            &lt;nav id="nav-small"
+                                class="flx flx-column flx-min-center bg-off-primary pd-s pos-absolute z-10 tl-0"&gt;
+                                &lt;button id="btn-close-small" class="btn-txt bg-off-primary pd-xs"&gt;
+                                    &lt;span&gt; class="material-icons mg-btm-s"&gt;close&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;p class="txt-primary txt-md txt-cap mg-btm-xs"&gt;profile&lt;/p&gt;
+                                &lt;p class="txt-primary txt-md txt-cap mg-btm-xs"&gt;feed&lt;/p&gt;
+                                &lt;p class="txt-primary txt-md txt-cap mg-btm-xs"&gt;order&lt;/p&gt;
+                                &lt;p class="txt-primary txt-md txt-cap mg-btm-xs"&gt;messages&lt;/p&gt;
+                            &lt;/nav&gt;
+                        &lt;/div&gt;
+                    &lt;/header&gt;
                 </code>
             </pre>
 
-            <p id="img-res" class="txt-md txt-cap txt-primary mg-btm-xs">dimension responsiveness</p>
-            <img src='../../assets/img.jpg' alt='Hairy cow' class='img-md img-fit-cover' />
+
+
+            <p id="drawer-css" class="txt-md txt-cap txt-primary mg-btm-xs">drawer css</p>
             <pre>
                 <code>
-                &lt;img src='../../assets/img.jpg' alt='Hairy cow' class='img-md img-fit-cover' /&gt;
+                    #btn-ham {
+                        display: none;
+                    }
+                    
+                    #nav-small {
+                        display: none;
+                    }                    
                 </code>
             </pre>
 
-            <p id="img-round" class="txt-md txt-cap txt-primary mg-btm-xs">round image</p>
-            <img src='../../assets/img.jpg' alt='Hairy cow' class='img-s brd-full img-fit-cover' />
+            <p id="drawer-js" class="txt-md txt-cap txt-primary mg-btm-xs">drawer js</p>
             <pre>
                 <code>
-                &lt;img src='../../assets/img.jpg' alt='Hairy cow' class='img-s brd-full img-fit-cover' /&gt;
-                </code>
-            </pre>
+                    const hamBtn = document.querySelector('#btn-ham')
+                    const navSmall = document.querySelector('#nav-small')
+                    const smallNavCloseBtn = document.querySelector('#btn-close-small')
 
-            <p id="img-css" class="txt-md txt-cap txt-primary mg-btm-xs">image css</p>
-            <pre>
-                <code>
-                /* image fit  */
 
-                .img-fit-cover {
-                    object-fit: cover;
-                }
-                    
-                .img-fit-contain {
-                    object-fit: contain;
-                }
-                    
-                /* image dimensions */
-                    
-                .img-xs {
-                    width: 8rem;
-                }
-                    
-                .img-s {
-                    width: 15rem;
-                }
-                    
-                .img-md {
-                    width: 20rem;
-                }
-                    
-                .img-lg {
-                    width: 25rem;
-                }
-                    
-                .img-xlg {
-                    width: 30rem;
-                }                    
+                    hamBtn.addEventListener('click', () => {
+                        navSmall.style.display = 'flex'
+                    })
+
+                    smallNavCloseBtn.addEventListener('click', () => {
+                        navSmall.style.display = 'none'
+                    })
                 </code>
             </pre>
 
@@ -185,17 +205,15 @@
         <aside class="aside-submenu pos-sticky t-0">
             <ul>
                 <li id="pg-sublink" class="mg-btm-s">
-                    <a href="#img-density" class="txt-primary txt-cap">responsive density</a>
+                    <a href="#drawer-basic" class="txt-primary txt-cap">drawer menu</a>
                 </li>
                 <li id="pg-sublink" class="mg-btm-s">
-                    <a href="#img-res" class="txt-primary txt-cap">responsive dimensions</a>
+                    <a href="#drawer-css" class="txt-primary txt-cap">drawer css</a>
                 </li>
                 <li id="pg-sublink" class="mg-btm-s">
-                    <a href="#img-round" class="txt-primary txt-cap">round image</a>
+                    <a href="#drawer-js" class="txt-primary txt-cap">drawer js</a>
                 </li>
-                <li id="pg-sublink" class="mg-btm-s">
-                    <a href="#img-css" class="txt-primary txt-cap">image css</a>
-                </li>
+
             </ul>
         </aside>
     </main>
@@ -204,6 +222,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <script src='../../main-script.js'></script>
+<script src='../../scripts/drawer-script.js'></script>
 <script src='../../scripts/theme-script.js'></script>
 
 </html>
